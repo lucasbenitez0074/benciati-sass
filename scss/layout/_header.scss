@@ -1,0 +1,21 @@
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    .marcaHotel{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: .625rem;
+        img {
+            width: 3.75rem;
+            height: 3.75rem;
+        }
+        h1 {
+            font-size: 1.625rem ;
+            color: white;
+            font-family: $titulo;
+        }
+    }
+}

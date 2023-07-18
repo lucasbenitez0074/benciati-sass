@@ -1,0 +1,18 @@
+.navbar {
+    background-image: $backNav;
+}
+.navbar-nav {
+    gap: .9375rem;
+    margin-left: 3.125rem;
+    li a {
+        color: white;
+        font-size: 1.25rem;
+        font-weight: bolder;
+        transition: 0.5s;
+        font-family: $titulo;
+    }
+    &:hover {
+        color: black;
+        
+    }
+}

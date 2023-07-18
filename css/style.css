@@ -1,0 +1,366 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e1a34;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+header .marcaHotel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.625rem;
+}
+header .marcaHotel img {
+  width: 3.75rem;
+  height: 3.75rem;
+}
+header .marcaHotel h1 {
+  font-size: 1.625rem;
+  color: white;
+  font-family: "Playfair Display", serif;
+}
+
+.navbar {
+  background-image: linear-gradient(to bottom, #1e1a43, rgb(153, 140, 168));
+}
+
+.navbar-nav {
+  gap: 0.9375rem;
+  margin-left: 3.125rem;
+}
+.navbar-nav li a {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  transition: 0.5s;
+  font-family: "Playfair Display", serif;
+}
+.navbar-nav:hover {
+  color: black;
+}
+
+.btnBookNow {
+  color: black;
+  width: 6.25rem;
+  background-color: rgb(198, 196, 210);
+  padding: 0.9375rem;
+  box-shadow: 0px 0px 4px black;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.1875rem;
+  cursor: pointer;
+  transition: 1s;
+}
+.btnBookNow:hover {
+  background-color: #5F5A7C;
+  color: white;
+  box-shadow: 0 0 10px black;
+}
+
+.buttonForm {
+  width: 8rem;
+  background-color: rgb(198, 196, 210);
+  box-shadow: 0px 0px 4px black;
+  font-size: 0.9375rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.1875rem;
+  cursor: pointer;
+  transition: 1s;
+}
+.buttonForm:hover {
+  background-color: #5F5A7C;
+  color: white;
+  box-shadow: 0 0 10px black;
+}
+
+.btnServ {
+  background-color: rgba(198, 196, 210, 0.7);
+  color: rgb(0, 0, 0);
+  backdrop-filter: blur(1px);
+  font-family: "Antic", sans-serif;
+  font-weight: bolder;
+  transition: 1s;
+}
+.btnServ:hover {
+  background-color: rgb(198, 196, 210);
+}
+
+.mainSection {
+  background-color: #1e1a34;
+  background-image: url("../assets/img/hotel.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 7.5rem;
+  background-size: cover;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas: "cuad1 cuad2" "cuad3 cuad3";
+}
+.mainSection .mainSlogan {
+  grid-area: cuad1;
+  justify-self: center;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.1875rem;
+  background-color: rgba(30, 26, 52, 0.7);
+  color: rgb(255, 255, 255);
+  backdrop-filter: blur(4px);
+  width: 37.5rem;
+  height: 14.375rem;
+  padding: 0.3125rem 0 0.1875rem 0.3125rem;
+}
+.mainSection .mainSlogan p {
+  color: white;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  padding-left: 1.25rem;
+}
+.mainSection .mainSlogan h2 {
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Playfair Display", serif;
+}
+.mainSection .reservationWindow {
+  justify-self: center;
+  align-self: center;
+  grid-area: cuad3;
+  background-color: rgba(198, 196, 210, 0.4);
+  color: rgb(0, 0, 0);
+  backdrop-filter: blur(4px);
+  width: 87vw;
+  height: 8.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainSection .reservationWindow form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 40% 20% 20%;
+}
+.mainSection .reservationWindow form legend {
+  font-size: 1.2rem;
+  font-family: "Playfair Display", serif;
+}
+.mainSection .reservationWindow form input {
+  padding: 0.3125rem;
+  height: 2.8125rem;
+}
+.mainSection .reservationWindow form .destinationInput {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.mainSection .reservationWindow form .dateInput {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.mainSection .reservationWindow form .guestInput {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.mainSection .reservationWindow form .buttonFormInput {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.secondarySection {
+  margin-top: 0;
+  background-color: #1e1a34;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.secondarySection .openIntro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.secondarySection .openIntro .divisoryLane {
+  height: 0.125rem;
+  width: 31.25rem;
+  background-color: rgb(255, 255, 255);
+  margin: 2.5rem 0;
+}
+.secondarySection .openIntro .row .col-10 {
+  padding-right: 0;
+}
+.secondarySection .openIntro .row .col-10 .carouselIntro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.625rem solid #1e1a34;
+}
+.secondarySection .openIntro .row .col-10 .carouselIntro .carouselCustom {
+  width: 90%;
+  height: 25rem;
+}
+.secondarySection .openIntro .row .col-10 .carouselIntro .carouselCustom img {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+}
+.secondarySection .openIntro .row .col-lg-4 {
+  padding-right: 0;
+  padding-left: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: none;
+}
+.secondarySection .openIntro .row .col-lg-4 h2 {
+  color: white;
+  font-family: "Playfair Display", serif;
+}
+.secondarySection .openIntro .row .col-lg-4 p {
+  color: white;
+  font-family: "Antic", sans-serif;
+}
+.secondarySection .openIntro .reservationResponsive {
+  display: none;
+}
+
+.thirdSection {
+  height: 250vh;
+}
+.thirdSection .theHotel {
+  height: 100vh;
+  margin-top: 9.375rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 35% 65%;
+}
+.thirdSection .theHotel .theHotelInfo {
+  justify-self: center;
+  align-self: center;
+  height: 100vh;
+  background-image: linear-gradient(to right, #1e1a43, rgb(153, 140, 168));
+  opacity: 0.8;
+}
+.thirdSection .theHotel .theHotelInfo h3 {
+  text-align: center;
+  padding-left: 2.1875rem;
+  color: white;
+  margin-top: 1.25rem;
+  font-family: "Playfair Display", serif;
+}
+.thirdSection .theHotel .theHotelInfo p {
+  margin-top: 3.125rem;
+  font-size: 1.625rem;
+  color: white;
+  font-family: "Antic", sans-serif;
+}
+.thirdSection .theHotel .pool1 {
+  height: 100vh;
+  background-image: url(../assets/img/hotel-pool1.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.thirdSection .theHotel .pool1 .theHotelInfoResponsive {
+  display: none;
+}
+.thirdSection .designAndComfort {
+  height: 100vh;
+  margin-top: 12.5rem;
+  margin-bottom: 12.5rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 65% 35%;
+}
+.thirdSection .designAndComfort .airVision {
+  height: 100vh;
+  background-image: url(../assets/img/hotelairvision.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.thirdSection .designAndComfort .airVision .designAndComfortInfoResponsive {
+  display: none;
+}
+.thirdSection .designAndComfort .designAndComfortInfo {
+  justify-self: center;
+  align-self: center;
+  height: 100vh;
+  opacity: 0.8;
+  background-image: linear-gradient(to left, #1e1a43, rgb(153, 140, 168));
+}
+.thirdSection .designAndComfort .designAndComfortInfo h3 {
+  text-align: center;
+  padding-left: 2.1875rem;
+  color: white;
+  margin-top: 1.25rem;
+}
+.thirdSection .designAndComfort .designAndComfortInfo p {
+  margin-top: 3.125rem;
+  font-size: 1.625rem;
+  color: white;
+}
+
+footer {
+  padding: 0;
+  padding-top: 1.5625rem;
+  height: 17.1875rem;
+  background-color: #5F5A7C;
+}
+footer .lastLine {
+  margin: 0;
+  padding: 0;
+}
+footer .lastLine img {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+footer .infoFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: none;
+}
+footer .infoFooter .directionAndContact p {
+  color: white;
+  font-family: "Antic", sans-serif;
+}
+footer .infoFooter .footerList ul {
+  list-style: none;
+}
+footer .infoFooter .footerList ul li {
+  color: white;
+  font-family: "Antic", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */

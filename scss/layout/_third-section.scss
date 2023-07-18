@@ -1,0 +1,76 @@
+.thirdSection {
+    height: 250vh;
+    .theHotel {
+        height: 100vh;
+        margin-top: 9.375rem;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 35% 65%;
+        .theHotelInfo {
+            justify-self: center;
+            align-self: center;
+            height: 100vh;
+            background-image: linear-gradient(to right, #1e1a43, rgb(153, 140, 168) );
+            opacity: 0.8;
+            h3 {
+                text-align: center;
+                padding-left: 2.1875rem;
+                color: white;
+                margin-top: 1.25rem;
+                font-family: $titulo;
+            }
+            p {
+                margin-top: 3.125rem;
+                font-size: 1.625rem;
+                color: white;
+                font-family: $parrafo;
+            }
+        }
+        .pool1 {
+            height: 100vh;
+            background-image: url(../assets/img/hotel-pool1.jpeg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            .theHotelInfoResponsive {
+                display: none;
+            }
+        }
+    }
+    .designAndComfort {
+        height: 100vh;
+        margin-top: 12.5rem;
+        margin-bottom: 12.5rem;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 65% 35%;
+        .airVision {
+            height: 100vh;
+            background-image: url(../assets/img/hotelairvision.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            .designAndComfortInfoResponsive {
+                display: none;
+            }
+        }
+        .designAndComfortInfo {
+            justify-self: center;
+            align-self: center;
+            height: 100vh;
+            opacity: 0.8;
+            background-image: linear-gradient(to left, #1e1a43, rgb(153, 140, 168) );
+            h3 {
+                text-align: center;
+                padding-left: 2.1875rem;
+                color: white;
+                margin-top: 1.25rem;
+            }
+            p {
+                margin-top: 3.125rem;
+                font-size: 1.625rem;
+                color: white;
+            }
+        }
+    }
+}

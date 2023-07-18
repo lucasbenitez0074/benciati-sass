@@ -1,0 +1,57 @@
+.secondarySection {
+    margin-top: 0;
+    background-color: $backMain;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .openIntro {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .divisoryLane {
+            height: .125rem;
+            width: 31.25rem;
+            background-color: rgb(255, 255, 255);
+            margin: 2.5rem 0;
+        }
+        .row {
+            .col-10 {
+                padding-right: 0;
+                .carouselIntro {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: .625rem solid $backMain;
+                    .carouselCustom {
+                        width: 90%;
+                        height: 25rem;
+                        img {
+                            width: 100%;
+                            height: 25rem;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+            .col-lg-4 {
+                padding-right: 0;
+                padding-left: 2.5rem;
+                @include flex(column,space-around,flex-start,none);
+                h2 {
+                    color: white;
+                    font-family: $titulo;
+                }
+                p {
+                    color: white;
+                    font-family: $parrafo;
+                    ;
+                }
+            }
+        }
+        .reservationResponsive {
+            display: none;
+        }
+    }
+}

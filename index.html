@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benciati</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="marcaHotel">
+                    <img src="./assets/icons/hotel-logo-white.png" alt="">
+                    <h1>Benciati</h1>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Accommodations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <button class="btn btnBookNow" type="submit">BOOK NOW</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="mainSection">
+            <div class="mainSlogan">
+                <p class="enjoy">Enjoy</p>
+                <h2><i>PARADISE</i></h2>
+                <p class="onEarth">On Earth</p>
+            </div>
+            <div class="reservationWindow">
+                <form>
+                    <div class="destinationInput">
+                        <div><legend><img src="./assets/icons/location-pin.png" alt=""><b> DESTINATION</b></legend></div>
+                        <label for="destination"></label>
+                        <input type="text" id="destination" placeholder="Sidney, Australia">
+                    </div>
+                    <div class="dateInput">
+                        <div><legend><img src="./assets/icons/calendar.png" alt=""><b> STAY DATES</b></legend></div>
+                        <div class="checkOutIn">
+                            <label for="checkin"></label>
+                            <input type="date" id="checkin" placeholder="check in">
+                            <label for="checkout"></label>
+                            <input type="date" id="checkout" placeholder="checkout">
+                        </div>
+                    </div>
+                    <div class="guestInput">
+                        <div><legend><img src="./assets/icons/group.png" alt=""><b> GUESTS</b></legend></div>
+                        <label for="guests"></label>
+                        <input type="number" id="guests" placeholder="2 guests" class="guests"> 
+                    </div>
+                    <div class="buttonFormInput">
+                    <input type="submit" value="BOOK NOW" class="buttonForm">
+                    </div>
+                </form>
+            </div>
+            </section>
+            <section class="secondarySection container-fluid">
+                <div class="openIntro">
+                    <div class="divisoryLane"></div> 
+                    <div class="row flex-lg-row-reverse align-items-center g-5 py-5 container-fluid">
+                        <div class="col-10 col-sm-8 col-lg-8">
+                            <div class="carouselIntro">
+                                <div id="carouselExampleFade" class="carousel slide carousel-fade carouselCustom">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="./assets/img/carrousel-4.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item active">
+                                            <img src="./assets/img/carrousel-1.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./assets/img/carrousel-2.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./assets/img/carrousel-3.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <h2 class="display-5 fw-bold lh-1 mb-3">Hotel Benciati</h1>
+                            <p class="lead">With its luxurious accomodation and spa, iconic restaurants and entertainment precincts, alongside the thrills of a world-class casino, Benciati Hotel is Australia’s five-star fun-parlour.</p>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                <button type="button" class="btn btnServ btn-lg px-4 me-md-2">View Services</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divisoryLane"></div> 
+                        <div class="reservationResponsive">
+                        <form>
+                            <div class="destinationInputResponsive">
+                                <div><legend><img src="./assets/icons/location-pin.png" alt=""><b> DESTINATION</b></legend></div>
+                                <label for="destination"></label>
+                                <input type="text" id="destination" placeholder="Sidney, Australia">
+                            </div>
+                            <div class="dateInputResponsive">
+                                <div class="dateTittle"><legend><img src="./assets/icons/calendar.png" alt=""><b> STAY DATES</b></legend></div>
+                                <div class="checkInResponsive">
+                                    <label for="checkin"></label>
+                                    <input type="date" id="checkin" placeholder="check in">
+                                </div>
+                                <div class="checkOutResponsive">    
+                                    <label for="checkout"></label>
+                                    <input type="date" id="checkout" placeholder="checkout">
+                                </div>
+                            </div>
+                            <div class="guestInputResponsive">
+                                <div><legend><img src="./assets/icons/group.png" alt=""><b> GUESTS</b></legend></div>
+                                <label for="guests"></label>
+                                <input type="number" id="guests" placeholder="2 guests" class="guests"> 
+                            </div>
+                            <div class="buttonFormInputResponsive">
+                            <input type="submit" value="BOOK NOW" class="buttonForm">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="thirdSection container-fluid">
+                <section class="theHotel">
+                    <div class="theHotelInfo">
+                        <h3>THE HOTEL</h3>
+                        <p>A Storied Legacy of Timeless Elegance and Hospitality.  
+                            Step into a realm of refined luxury and immerse yourself in the captivating history of Benciati Hotel. 
+                            This iconic establishment has stood as a beacon of exceptional service and grandeur for decades. 
+                            From its inception in 1975, Hotel Benciati has woven an enchanting tale of remarkable experiences and unforgettable moments. Each<br>corridor exudes an air of timeless elegance, preserving the charm and sophistication that have come to define this legendary establishment. 
+                        </p>
+                    </div>
+                    <div class="pool1">
+                        <div class="theHotelInfoResponsive">
+                            <h3>THE HOTEL</h3>
+                            <p>A Storied Legacy of Timeless Elegance and Hospitality.  
+                                Step into a realm of refined luxury and immerse yourself in the captivating history of Benciati Hotel. 
+                                This iconic establishment has stood as a beacon of exceptional service and grandeur for decades. 
+                                From its inception in 1975, Hotel Benciati has woven an enchanting tale of remarkable experiences and unforgettable moments. Each<br>corridor exudes an air of timeless elegance, preserving the charm and sophistication that have come to define this legendary establishment. 
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="designAndComfort">
+                    <div class="airVision">
+                        <div class="designAndComfortInfoResponsive">
+                            <h3>DESIGN AND COMFORT</h3>
+                            <P>
+                                Originally envisioned by visionary architects, Benciati Hotel was meticulously designed to embody opulence and sophistication. 
+                                Its breathtaking facade, adorned with intricate detailing and classic architectural motifs, is a testament to the artistry and craftsmanship of a bygone era. 
+                                Throughout its storied history, Benciati has played host to countless luminaries, dignitaries, and discerning travelers, each drawn to its unparalleled blend of charm and exclusivity. 
+                            </P>
+                        </div>
+                    </div>
+                    <div class="designAndComfortInfo">
+                        <h3>DESIGN AND COMFORT</h3>
+                        <P>
+                            Originally envisioned by visionary architects, Benciati Hotel was meticulously designed to embody opulence and sophistication. 
+                            Its breathtaking facade, adorned with intricate detailing and classic architectural motifs, is a testament to the artistry and craftsmanship of a bygone era. 
+                            Throughout its storied history, Benciati has played host to countless luminaries, dignitaries, and discerning travelers, each drawn to its unparalleled blend of charm and exclusivity. 
+                        </P>
+                    </div>
+                </section>
+            </section>
+    </main>
+    <footer class="container-fluid">
+        <div class="infoFooter">
+            <div class="directionAndContact">
+                <p class="number">+ 54 11 4808.2100</p>
+                <p class="mail">reservas@benciati.com.ar</p>
+                <p class="direction">Brandsen 805, Capital Federal  (C1163ABJ) Buenos Aires, Argentina</p>
+                <p class="cuit">BENCIATI HOTEL S.A.I. CUIT NRO. 30-52722598-8</p>
+            </div>
+            <div class="footerList">
+                <ul>
+                    <li>Complaints and suggestions</li>
+                    <li>Human Resources</li>
+                    <li>Newsletter</li>
+                    <li>Awards</li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top lastLine">
+            <div class="col-md-4 d-flex align-items-center">
+                    <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                    </a>
+                <span class="mb-3 mb-md-0 text-body-secondary"><img src="./assets/icons/hotel-logo-white.png" alt="" class="logoFooter"></span>
+            </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><img src="./assets/icons/facebookgrandeBlanco.png" alt=""></li>
+                <li class="ms-3"><img src="./assets/icons/gmailgrandeWhite.png" alt=""></li>
+                <li class="ms-3"><img src="./assets/icons/twitter-grandeWhite.png" alt=""></li>
+                <li class="ms-3"><img src="./assets/icons/instagramgrandeWhite.png" alt=""></li>
+            </ul>
+        </div>
+    </footer>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</body>
+</html>

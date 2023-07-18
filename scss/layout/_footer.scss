@@ -1,0 +1,33 @@
+footer {
+    padding: 0;
+    padding-top: 1.5625rem;
+    height: 17.1875rem;
+    background-color: $backThird;
+    .lastLine {
+        margin: 0;
+        padding: 0;
+        img {
+            width: 2rem;
+            height: 2rem;
+            cursor: pointer;
+        }
+    }
+    .infoFooter {
+        @include flex(row,space-between,center,none);
+        .directionAndContact {
+            p {
+                color: white;
+                font-family: $parrafo;
+            }
+        }
+        .footerList {
+            ul {
+                list-style: none;
+                li {
+                    color: white;
+                    font-family: $parrafo;
+                }
+            }
+        }
+    }
+}
