@@ -1,0 +1,107 @@
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    .frequentQuestions {
+        color: white;
+        margin: 2.5rem 1.875rem;
+        h3 {
+            font-family: $titulo;
+        }
+        .subrayado {
+            width:33.9375rem ;
+            height: .0625rem;
+            background-color: white;
+            margin: 10px 0;
+        }
+        .questionsContainer{
+            .question {
+                display: flex;
+                width: 33.9375rem;
+                height: 6.875rem;
+                background-color:rgba(222, 217, 253, 0.5);
+                align-items: center;
+                margin-top: .0625rem;
+            }
+        }
+    }
+    .contactForm {
+        color: white;
+        margin: 2.5rem 1.875rem;
+        h3 {
+            font-family: $titulo;
+        }
+        p {
+            font-family: $parrafo;
+        }
+        form {
+            margin: 3.125rem 0;
+            fieldset {
+                border: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 50rem;
+                .name {
+                    display: flex;
+                    gap: 3.75rem;
+                    justify-content: flex-start;
+                }
+                .email {
+                    input {
+                        width: 28.125rem;
+                        height: 3.125rem;
+                    }
+                }
+                .bloque {
+                    .textArea {
+                        textarea {
+                            background-color: #C6C4D2;
+                            height: 19.375rem;
+                            width: 35.625rem;
+                        }
+                        p {
+                            font-family: $parrafo;
+                            font-size: .75rem;
+                            color: rgb(45, 145, 212);
+                        }
+                    }
+                    .optionYes {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: .625rem;
+                        position: relative;
+                        right: .625rem;
+                        input {
+                            width: 1.5rem;
+                            height: 1.5rem;
+                            margin: .9375rem 0;
+                            padding: .9375rem;
+                        }
+                        p {
+                            font-size: 1.125rem;
+                        }
+                    }
+                }
+            }
+            input {
+                background-color: #C6C4D2;
+            }
+        }
+    }
+}
+.buttonSend {
+    width: 10.9375rem;
+    height: 3.125rem;
+    font-family: 'Playfair Display', serif ;
+    font-size: 1.25rem;
+    position: relative;
+    left: 30rem;
+    font-weight: bold;
+    transition: 1s;
+    &:hover {
+        background-color: #353150;
+        color: white;
+        box-shadow: 0 0 .625rem black; 
+    }
+}

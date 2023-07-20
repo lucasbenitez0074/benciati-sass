@@ -1,0 +1,21 @@
+.sectionSecondaryAcc {
+    background-color: #C6C4D2;
+    padding: 1.25rem 0rem;
+    .titleSectionOne {
+        background-color:rgba(95, 90, 124, 0.8);
+        color: white;
+        width: 95vw;
+        height: 5.625rem;
+        padding: 1.25rem 0;
+        h3 {
+            font-size: 2.5rem;
+        }
+    }
+    .StandardRoomsCards {
+        padding: 1.25rem 0 ;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+}

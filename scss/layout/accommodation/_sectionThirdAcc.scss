@@ -1,0 +1,20 @@
+.loungesAndSuites {
+    padding: 1.25rem 0rem;
+    .titleSectionTwo {
+        background-color:$backSec;
+        color: black;
+        width: 95vw;
+        height: 5.625rem;
+        padding: 1.25rem 0;
+        h3 {
+            font-size: 2.5rem;
+            font-family: $titulo;
+        }
+    }
+    .loungesAndSuitesCards {
+        padding: 1.25rem 0 ;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}

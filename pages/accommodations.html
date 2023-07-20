@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benciati</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="marcaHotel">
+                    <img src="../assets/icons/hotel-logo-white.png" alt="">
+                    <h1>Benciati</h1>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="accommodations.html">Accommodations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../pages/services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <button class="btn btnBookNow" type="submit">BOOK NOW</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="sectionMainAcc">
+            <div>
+                <h2>ROOMS & SUITES</h2>
+            </div>
+        </section>
+        <section class="sectionSecondaryAcc">
+            <div class="titleSectionOne">
+                <h3>Standard Rooms</h3>
+            </div>
+            <section class="StandardRoomsCards">
+                <!-- card 1 -->
+                <div class="card">
+                    <img class="imgCard" src="../assets/img/single-standar-room.jpg" alt="">
+                    <h4>Single standard room</h4>
+                    <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <div class="moreInfo">
+                            <img src="../assets/icons/plus.png" alt="">
+                            <p>info</p>
+                        </div>
+                    </button>
+                    <button class="buttonBook">BOOK NOW</button>
+                
+                </div>
+                
+                
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalToggleLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered  modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title fs-5" id="staticBackdropLabel">titulo de la habitacion</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="imgModal">
+                                    Imagen del cuarto
+                                    <img src="./contact.html" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>caracteristicas</p>
+                                    <ul>
+                                        <li>capacidad: 2 personas</li>
+                                        <li>sabanas 250 hilos</li>
+                                        <li> televisor 50 pulgadas</li>
+                                        <li>secador pelo/plancha</li>
+                                        <li>minibar</li>
+                                        <li>wifi</li>
+                                        <li>capacidad: 2 personas</li>
+                                        <li>sabanas 250 hilos</li>
+                                        <li> televisor 50 pulgadas</li>
+                                        <li>secador pelo/plancha</li>
+                                        <li>minibar</li>
+                                        <li>wifi</li>
+                                        <li>minibar</li>
+                                        <li>wifi</li>
+                                        <li>capacidad: 2 personas</li>
+                                        <li>sabanas 250 hilos</li>
+                                        <li> televisor 50 pulgadas</li>
+                                        <li>secador pelo/plancha</li>
+                                        <li>minibar</li>
+                                        <li>wifi</li>
+                                    </ul>
+                                </div>
+                                <div class="descript">
+                                    <p>"descripcion del cuarto"</p><br>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, eveniet, voluptatum ullam accusamus cupiditate a temporibus saepe unde corporis cum reiciendis, ipsa quo. Fugiat a sed eum incidunt deserunt suscipit?.</p>
+                                    <div class="tarifa">
+                                        <p>Tarifas: 125 USD / noche</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-bs-target="#exampleModalToggle2" class="btn buttonBook" data-bs-toggle="modal">BOOK NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="reservationWindow">
+                                    <form>
+                                        <div class="destinationInput">
+                                            <div><legend><img src="./assets/icons/location-pin.png" alt=""><b> DESTINATION</b></legend></div>
+                                            <label for="destination"></label>
+                                            <input type="text" id="destination" placeholder="Sidney, Australia">
+                                        </div>
+                                        <div class="dateInput">
+                                            <div><legend><img src="./assets/icons/calendar.png" alt=""><b> STAY DATES</b></legend></div>
+                                            <div class="checkOutIn">
+                                                <label for="checkin"></label>
+                                                <input type="date" id="checkin" placeholder="check in">
+                                                <label for="checkout"></label>
+                                                <input type="date" id="checkout" placeholder="checkout">
+                                            </div>
+                                        </div>
+                                        <div class="guestInput">
+                                            <div><legend><img src="./assets/icons/group.png" alt=""><b> GUESTS</b></legend></div>
+                                            <label for="guests"></label>
+                                            <input type="number" id="guests" placeholder="2 guests" class="guests"> 
+                                        </div>
+                                        <div class="buttonFormInput">
+                                            <input type="submit" value="BOOK NOW" class="buttonForm">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="card">
+                    <img class="imgCard" src="../assets/img/double-standar-room.jpeg" alt="">
+                    <h4>single superior room</h4>
+                    <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <div class="moreInfo">
+                            <img src="../assets/icons/plus.png" alt="">
+                            <p>info</p>
+                        </div>
+                    </button>
+                    <button class="buttonBook">BOOK NOW</button>
+                </div>
+                <!-- card 3 -->
+                <div class="card">
+                    <img class="imgCard" src="../assets/img/double-pair-standar-romm.jpg" alt="">
+                    <h4>double standard room</h4>
+                    <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <div class="moreInfo">
+                            <img src="../assets/icons/plus.png" alt="">
+                            <p>info</p>
+                        </div>
+                    </button>
+                    <button class="buttonBook">BOOK NOW</button>
+                </div>
+                <!-- card 4 -->
+                <div class="card">
+                    <img class="imgCard" src="../assets/img/triple-standar-room.jpg" alt="">
+                    <h4>triple standard room</h4>
+                    <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <div class="moreInfo">
+                            <img src="../assets/icons/plus.png" alt="">
+                            <p>info</p>
+                        </div>
+                    </button>
+                    <button class="buttonBook">BOOK NOW</button>
+                </div>
+                <!-- card 5 -->
+                <div class="card">
+                    <img class="imgCard" src="../assets/img/department-room.jpg" alt="">
+                    <h4>department room</h4>
+                    <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <div class="moreInfo">
+                            <img src="../assets/icons/plus.png" alt="">
+                            <p>info</p>
+                        </div>
+                    </button>
+                    <button class="buttonBook">BOOK NOW</button>
+                </div>
+                
+            </section>
+        </section>
+        <section class="loungesAndSuites">
+            <div class="titleSectionTwo">
+                <h3>Lounges And Suites</h3>
+            </div>
+            <section class="loungesAndSuitesCards">
+            <!-- card 1 -->
+                <div class="cardTwo">
+                    <img src="../assets/img/presidencial-suite.jpg" alt="">
+                    <h4>governor suite</h4>
+                    <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <div class="moreInfoTwo">
+                            <img src="../assets/icons/plus.png" alt="">
+                            <p>info</p>
+                        </div>
+                    </button>
+                    <button class="buttonBook2">BOOK NOW</button>
+                </div>
+            <!-- card 2 -->
+            <div class="cardTwo">
+                <img src="../assets/img/hotelroommain.jpg" alt="">
+                <h4>presidential suite</h4>
+                <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <div class="moreInfoTwo">
+                        <img src="../assets/icons/plus.png" alt="">
+                        <p>info</p>
+                    </div>
+                </button>
+                <button class="buttonBook2">BOOK NOW</button>
+            </div>
+            <!-- card 3 -->
+            <div class="cardTwo">
+                <img src="../assets/img/deluxe-mirador-suite.jpg" alt="">
+                <h4>deluxe lounge suite</h4>
+                <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <div class="moreInfoTwo">
+                        <img src="../assets/icons/plus.png" alt="">
+                        <p>info</p>
+                    </div>
+                </button>
+                <button class="buttonBook2">BOOK NOW</button>
+            </div>
+            <!-- card 4 -->
+            <div class="cardTwo">
+                <img src="../assets/img/suite-gobernador.jpg"" alt="">
+                <h4>suite junior lounge</h4>
+                <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <div class="moreInfoTwo">
+                        <img src="../assets/icons/plus.png" alt="">
+                        <p>info</p>
+                    </div>
+                </button>
+                <button class="buttonBook2">BOOK NOW</button>
+            </div>
+            <!-- card 5 -->
+            <div class="cardTwo">
+                <img src="../assets/img/deluxe-suite.jpg" alt="">
+                <h4>diplomatic suite</h4>
+                <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <div class="moreInfoTwo">
+                        <img src="../assets/icons/plus.png" alt="">
+                        <p>info</p>
+                    </div>
+                </button>
+                <button class="buttonBook2">BOOK NOW</button>
+            </div>
+            <!-- card 6 -->
+            <div class="cardTwo">
+                <img src="../assets/img/suite-roof-garden.jpg" alt="">
+                <h4>roof suite garden</h4>
+                <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <div class="moreInfoTwo">
+                        <img src="../assets/icons/plus.png" alt="">
+                        <p>info</p>
+                    </div>
+                </button>
+                <button class="buttonBook2">BOOK NOW</button>
+            </div>
+            </section>
+        </section>    
+    </main>
+    <footer class="container-fluid">
+        <div class="infoFooter">
+            <div class="directionAndContact">
+                <p class="number">+ 54 11 4808.2100</p>
+                <p class="mail">reservas@benciati.com.ar</p>
+                <p class="direction">Brandsen 805, Capital Federal  (C1163ABJ) Buenos Aires, Argentina</p>
+                <p class="cuit">BENCIATI HOTEL S.A.I. CUIT NRO. 30-52722598-8</p>
+            </div>
+            <div class="footerList">
+                <ul>
+                    <li>Complaints and suggestions</li>
+                    <li>Human Resources</li>
+                    <li>Newsletter</li>
+                    <li>Awards</li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top lastLine">
+            <div class="col-md-4 d-flex align-items-center">
+                    <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                    </a>
+                <span class="mb-3 mb-md-0 text-body-secondary"><img src="../assets/icons/hotel-logo-white.png" alt="" class="logoFooter"></span>
+            </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><img src="../assets/icons/facebookgrandeBlanco.png" alt=""></li>
+                <li class="ms-3"><img src="../assets/icons/gmailgrandeWhite.png" alt=""></li>
+                <li class="ms-3"><img src="../assets/icons/twitter-grandeWhite.png" alt=""></li>
+                <li class="ms-3"><img src="../assets/icons/instagramgrandeWhite.png" alt=""></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</body>
+</html>
