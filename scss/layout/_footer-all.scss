@@ -6,6 +6,7 @@ footer {
     .lastLine {
         margin: 0;
         padding: 0;
+        justify-content: space-between;
         img {
             width: 2rem;
             height: 2rem;
@@ -14,6 +15,10 @@ footer {
     }
     .infoFooter {
         @include flex(row,space-between,center,none);
+        .logoMobile {
+            display: none
+        }
+
         .directionAndContact {
             p {
                 color: white;
@@ -27,7 +32,12 @@ footer {
                     color: white;
                     font-family: $parrafo;
                     
+                }
             }
-        }
+        }   
     }
-}}
+    .dropup {
+        display: none;
+
+    }
+}

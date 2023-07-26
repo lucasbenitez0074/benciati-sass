@@ -12,8 +12,8 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navBoot">
+            <div class="menuContainer container-fluid">
                 <div class="marcaHotel">
                     <img src="../assets/icons/hotel-logo-white.png" alt="">
                     <h1>Benciati</h1>
@@ -21,16 +21,16 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse colapsoNav" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 barraNavegacion">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                            <a class="nav-link"  href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="accommodations.html">Accommodations</a>
+                            <a class="nav-link"  href="accommodations.html">Accommodations</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../pages/services.html">Services</a>
+                            <a class="nav-link"  href="../pages/services.html">Services</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../pages/events.html">Events</a>
@@ -68,103 +68,20 @@
                         </div>
                     </button>
                     <button class="buttonBook">BOOK NOW</button>
-                
                 </div>
-                
-                
-                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalToggleLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered  modal-xl">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title fs-5" id="staticBackdropLabel">titulo de la habitacion</h4>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="imgModal">
-                                    Imagen del cuarto
-                                    <img src="./contact.html" alt="">
-                                </div>
-                                <div class="info">
-                                    <p>caracteristicas</p>
-                                    <ul>
-                                        <li>capacidad: 2 personas</li>
-                                        <li>sabanas 250 hilos</li>
-                                        <li> televisor 50 pulgadas</li>
-                                        <li>secador pelo/plancha</li>
-                                        <li>minibar</li>
-                                        <li>wifi</li>
-                                        <li>capacidad: 2 personas</li>
-                                        <li>sabanas 250 hilos</li>
-                                        <li> televisor 50 pulgadas</li>
-                                        <li>secador pelo/plancha</li>
-                                        <li>minibar</li>
-                                        <li>wifi</li>
-                                        <li>minibar</li>
-                                        <li>wifi</li>
-                                        <li>capacidad: 2 personas</li>
-                                        <li>sabanas 250 hilos</li>
-                                        <li> televisor 50 pulgadas</li>
-                                        <li>secador pelo/plancha</li>
-                                        <li>minibar</li>
-                                        <li>wifi</li>
-                                    </ul>
-                                </div>
-                                <div class="descript">
-                                    <p>"descripcion del cuarto"</p><br>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, eveniet, voluptatum ullam accusamus cupiditate a temporibus saepe unde corporis cum reiciendis, ipsa quo. Fugiat a sed eum incidunt deserunt suscipit?.</p>
-                                    <div class="tarifa">
-                                        <p>Tarifas: 125 USD / noche</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" data-bs-target="#exampleModalToggle2" class="btn buttonBook" data-bs-toggle="modal">BOOK NOW</button>
-                            </div>
-                        </div>
+
+                <div class="cardResponsive">
+                    <div class="infoImpar">
+                        <h4>single standard room</h4>
+                    <div class="icon">
+                        <img src="../assets/icons/plus.png" alt="">
+                        <p>info</p>
                     </div>
+                    <button>BOOK NOW</button>
+                    </div>
+                    <img src="../assets/img/single-standar-room.jpg" alt="" class="img-fluid">
                 </div>
                 
-                <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-                    <div class="modal-dialog modal-dialog-centered modal-xl">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="reservationWindow">
-                                    <form>
-                                        <div class="destinationInput">
-                                            <div><legend><img src="./assets/icons/location-pin.png" alt=""><b> DESTINATION</b></legend></div>
-                                            <label for="destination"></label>
-                                            <input type="text" id="destination" placeholder="Sidney, Australia">
-                                        </div>
-                                        <div class="dateInput">
-                                            <div><legend><img src="./assets/icons/calendar.png" alt=""><b> STAY DATES</b></legend></div>
-                                            <div class="checkOutIn">
-                                                <label for="checkin"></label>
-                                                <input type="date" id="checkin" placeholder="check in">
-                                                <label for="checkout"></label>
-                                                <input type="date" id="checkout" placeholder="checkout">
-                                            </div>
-                                        </div>
-                                        <div class="guestInput">
-                                            <div><legend><img src="./assets/icons/group.png" alt=""><b> GUESTS</b></legend></div>
-                                            <label for="guests"></label>
-                                            <input type="number" id="guests" placeholder="2 guests" class="guests"> 
-                                        </div>
-                                        <div class="buttonFormInput">
-                                            <input type="submit" value="BOOK NOW" class="buttonForm">
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back</button>
-                        </div>
-                        </div>
-                    </div>
-                </div>
                 <!-- card 2 -->
                 <div class="card">
                     <img class="imgCard" src="../assets/img/double-standar-room.jpeg" alt="">
@@ -176,6 +93,18 @@
                         </div>
                     </button>
                     <button class="buttonBook">BOOK NOW</button>
+                </div>
+
+                <div class="cardResponsive">
+                    <img src="../assets/img/double-standar-room.jpeg" alt="">
+                    <div class="infoImpar">
+                        <h4>single superior room</h4>
+                        <div class="icon">
+                        <img src="../assets/icons/plus.png" alt="">
+                        <p>info</p>
+                        </div>
+                        <button>BOOK NOW</button>
+                    </div>
                 </div>
                 <!-- card 3 -->
                 <div class="card">
@@ -189,6 +118,18 @@
                     </button>
                     <button class="buttonBook">BOOK NOW</button>
                 </div>
+
+                <div class="cardResponsive">
+                    <div class="infoImpar">
+                        <h4>double standard room</h4>
+                    <div class="icon">
+                        <img src="../assets/icons/plus.png" alt="">
+                        <p>info</p>
+                    </div>
+                    <button>BOOK NOW</button>
+                    </div>
+                    <img src="../assets/img/double-pair-standar-romm.jpg">
+                </div>
                 <!-- card 4 -->
                 <div class="card">
                     <img class="imgCard" src="../assets/img/triple-standar-room.jpg" alt="">
@@ -201,6 +142,18 @@
                     </button>
                     <button class="buttonBook">BOOK NOW</button>
                 </div>
+
+                <div class="cardResponsive">
+                    <img src="../assets/img/triple-standar-room.jpg" alt="">
+                    <div class="infoImpar">
+                        <h4>triple standard room</h4>
+                        <div class="icon">
+                        <img src="../assets/icons/plus.png" alt="">
+                        <p>info</p>
+                        </div>
+                        <button>BOOK NOW</button>
+                    </div>
+                </div>
                 <!-- card 5 -->
                 <div class="card">
                     <img class="imgCard" src="../assets/img/department-room.jpg" alt="">
@@ -212,6 +165,18 @@
                         </div>
                     </button>
                     <button class="buttonBook">BOOK NOW</button>
+                </div>
+
+                <div class="cardResponsive">
+                    <div class="infoImpar">
+                        <h4>department room</h4>
+                    <div class="icon">
+                        <img src="../assets/icons/plus.png" alt="">
+                        <p>info</p>
+                    </div>
+                    <button>BOOK NOW</button>
+                    </div>
+                    <img src="../assets/img/department-room.jpg" alt="">
                 </div>
                 
             </section>
@@ -233,6 +198,18 @@
                     </button>
                     <button class="buttonBook2">BOOK NOW</button>
                 </div>
+
+                <div class="cardTwoResponsive">
+                    <img src="../assets/img/presidencial-suite.jpg" alt="">
+                    <div class="infoPar">
+                        <h4>governor suite</h4>
+                        <div class="icon">
+                        <img src="../assets/icons/plus.png" alt="">
+                        <p>info</p>
+                        </div>
+                        <button>BOOK NOW</button>
+                    </div>
+                </div>
             <!-- card 2 -->
             <div class="cardTwo">
                 <img src="../assets/img/hotelroommain.jpg" alt="">
@@ -244,6 +221,18 @@
                     </div>
                 </button>
                 <button class="buttonBook2">BOOK NOW</button>
+            </div>
+
+            <div class="cardTwoResponsive">
+                <div class="infoPar">
+                    <h4>presidential suite</h4>
+                    <div class="icon">
+                    <img src="../assets/icons/plus.png" alt="">
+                    <p>info</p>
+                    </div>
+                    <button>BOOK NOW</button>
+                </div>
+                <img src="../assets/img/hotelroommain.jpg" alt="">
             </div>
             <!-- card 3 -->
             <div class="cardTwo">
@@ -257,6 +246,18 @@
                 </button>
                 <button class="buttonBook2">BOOK NOW</button>
             </div>
+
+            <div class="cardTwoResponsive">
+                <img src="../assets/img/deluxe-mirador-suite.jpg" alt="">
+                <div class="infoPar">
+                    <h4>deluxe lounge suite</h4>
+                    <div class="icon">
+                    <img src="../assets/icons/plus.png" alt="">
+                    <p>info</p>
+                    </div>
+                    <button>BOOK NOW</button>
+                </div>
+            </div>
             <!-- card 4 -->
             <div class="cardTwo">
                 <img src="../assets/img/suite-gobernador.jpg"" alt="">
@@ -268,6 +269,18 @@
                     </div>
                 </button>
                 <button class="buttonBook2">BOOK NOW</button>
+            </div>
+
+            <div class="cardTwoResponsive">
+                <div class="infoPar">
+                    <h4>suite junior lounge</h4>
+                    <div class="icon">
+                    <img src="../assets/icons/plus.png" alt="">
+                    <p>info</p>
+                    </div>
+                    <button>BOOK NOW</button>
+                </div>
+                <img src="../assets/img/suite-gobernador.jpg" alt="">
             </div>
             <!-- card 5 -->
             <div class="cardTwo">
@@ -281,6 +294,18 @@
                 </button>
                 <button class="buttonBook2">BOOK NOW</button>
             </div>
+
+            <div class="cardTwoResponsive">
+                <img src="../assets/img/deluxe-suite.jpg" alt="">
+                <div class="infoPar">
+                    <h4>diplomatic suite</h4>
+                    <div class="icon">
+                    <img src="../assets/icons/plus.png" alt="">
+                    <p>info</p>
+                    </div>
+                    <button>BOOK NOW</button>
+                </div>
+            </div>
             <!-- card 6 -->
             <div class="cardTwo">
                 <img src="../assets/img/suite-roof-garden.jpg" alt="">
@@ -292,6 +317,18 @@
                     </div>
                 </button>
                 <button class="buttonBook2">BOOK NOW</button>
+            </div>
+
+            <div class="cardTwoResponsive">
+                <div class="infoPar">
+                    <h4>roof suite garden</h4>
+                    <div class="icon">
+                    <img src="../assets/icons/plus.png" alt="">
+                    <p>info</p>
+                    </div>
+                    <button>BOOK NOW</button>
+                </div>
+                <img src="../assets/img/deluxe-suite.jpg" alt="">
             </div>
             </section>
         </section>    

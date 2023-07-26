@@ -1,0 +1,114 @@
+@media (max-width:991px){
+    header {
+        .navBoot {
+            .menuContainer {
+                height: 6.875rem;
+                .colapsoNav {
+                    .barraNavegacion {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        align-items: center;
+                        background-color: $backMain;
+                        width: 50%;
+                        height: 82vh;
+                        margin: 0;
+                        li {
+                            a {
+                                font-size: 1.25rem;
+                            }
+                        }
+                    }
+                    form {
+                        button {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mainSection {
+        .mainSlogan {
+            width:23rem ;
+        }
+        .reservationWindow {
+            height: 9.375rem;
+            form {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: 
+                "dest date gues"
+                "dest date but";
+                legend {
+                    font-size: 1rem;
+                    font-weight: bolder;
+                }
+                .destinationInput {
+                    grid-area: dest;
+                    input {
+                        width: 9.375rem;
+                    }
+                }
+                .dateInput {
+                    grid-area: date;
+                    align-items: flex-start;
+                    justify-content: center;
+                    .checkOutIn {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        input {
+                            width: 9.375rem;
+                        }
+                    }     
+                }
+                .guestInput {
+                    grid-area: gues;
+                    align-self: flex-end;
+                    input {
+                        width: 9.375rem;
+                    }
+                }
+                .buttonFormInput {
+                    grid-area: but;
+                    align-self: center;
+                }
+            }
+        }
+    }
+    .secondarySection {
+        .openIntro {
+            .row {
+                .col-10 {
+                    width: 100%;
+                }
+            }
+            .divisoryLane {
+                display: none;
+            }
+        }
+    }
+    /* accommodations */
+    /* no hay estilo agregado */
+
+    /* services */
+    main {
+        .mainServicesSection {
+            div {
+                width: 30rem;
+                height: 9rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                h2 {
+                    font-size: 3rem;
+                }
+            }   
+        }
+        .servicesCards {
+            gap: 1.5625rem;
+        }
+    }
+}

@@ -194,12 +194,15 @@ header .marcaHotel h1 {
 }
 
 .secondarySection {
-  margin-top: 0;
+  margin-top: 6.25rem;
   background-color: #1e1a34;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.secondarySection .reservationResponsive {
+  display: none;
 }
 .secondarySection .openIntro {
   display: flex;
@@ -324,6 +327,7 @@ header .marcaHotel h1 {
   margin-top: 1.25rem;
 }
 .thirdSection .designAndComfort .designAndComfortInfo p {
+  margin-left: 0.125rem;
   margin-top: 3.125rem;
   font-size: 1.625rem;
   color: white;
@@ -338,6 +342,7 @@ footer {
 footer .lastLine {
   margin: 0;
   padding: 0;
+  justify-content: space-between;
 }
 footer .lastLine img {
   width: 2rem;
@@ -351,6 +356,9 @@ footer .infoFooter {
   align-items: center;
   flex-wrap: none;
 }
+footer .infoFooter .logoMobile {
+  display: none;
+}
 footer .infoFooter .directionAndContact p {
   color: white;
   font-family: "Antic", sans-serif;
@@ -362,9 +370,8 @@ footer .infoFooter .footerList ul li {
   color: white;
   font-family: "Antic", sans-serif;
 }
-
-.accHeader {
-  position: static;
+footer .dropup {
+  display: none;
 }
 
 .sectionMainAcc {
@@ -414,6 +421,7 @@ footer .infoFooter .footerList ul li {
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin-top: 10px;
+  gap: 6.25rem;
 }
 
 .card {
@@ -465,6 +473,10 @@ footer .infoFooter .footerList ul li {
   background-color: #5F5A7C;
   color: white;
   box-shadow: 0 0 10px black;
+}
+
+.cardResponsive {
+  display: none;
 }
 
 .cardTwo {
@@ -519,153 +531,82 @@ footer .infoFooter .footerList ul li {
   box-shadow: 0 0 10px black;
 }
 
-.modal-header {
-  background-color: #1e1a34;
-}
-.modal-header h4 {
-  color: white;
-  font-family: "Playfair Display", serif;
+.cardTwoResponsive {
+  display: none;
 }
 
-.modal-body {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 2fr 1fr;
-  grid-template-areas: "ar1 ar2" "ar3 ar2";
-  background-color: #5F5A7C;
-}
-.modal-body .info {
-  grid-area: ar2;
-}
-.modal-body .info p {
-  text-align: center;
-  font-family: "Playfair Display", serif;
-}
-.modal-body .info ul li {
-  color: white;
-  font-family: "Antic", sans-serif;
-}
-.modal-body .descript {
-  justify-self: center;
-  align-self: center;
-  grid-area: ar3;
-  text-align: center;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.modal-body .descript p {
-  color: white;
-  font-family: "Antic", sans-serif;
-}
-.modal-body .descript .tarifa {
-  width: 12.5rem;
-  background-color: #5F5A7C;
-}
-.modal-body .descript .tarifa p {
-  color: white;
-  font-family: "Antic", sans-serif;
-}
-.modal-body .imgModal {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  background-color: rgb(198, 196, 210);
-  opacity: 0.75;
-}
-
-.modal-footer {
-  background-color: #1e1a34;
-}
-.modal-footer .buttonBook {
-  height: 2.5rem;
-  width: 8rem;
-  background-color: rgb(198, 196, 210);
-  box-shadow: 0px 0px 4px black;
-  font-size: 0.9375rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 0.1875rem;
-  cursor: pointer;
-  transition: 1s;
-}
-.modal-footer .buttonBook:hover {
-  background-color: #5F5A7C;
-  color: white;
-  box-shadow: 0 0 10px black;
-}
-
+/*
 .reservationWindow {
-  justify-self: center;
-  align-self: center;
-  grid-area: cuad3;
-  background-color: rgba(198, 196, 210, 0.4);
-  color: rgb(0, 0, 0);
-  backdrop-filter: blur(4px);
-  width: 68.75rem;
-  height: 8.75rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-self: center;
+    align-self: center;
+    grid-area: cuad3;
+    background-color:rgba(198, 196, 210, 0.4);
+    color: rgba(0,0,0, 1);
+    backdrop-filter: blur(4px);
+    width: 68.75rem;
+    height: 8.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 20% 40% 20% 20%;
+        legend {
+            font-size: 1.2rem;
+            font-family:$titulo; 
+        }
+        input {
+            padding: .3125rem;
+            height: 2.8125rem;
+        }
+        .buttonFormInput {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            .buttonForm{
+                width: 8rem;
+                background-color: rgba(198, 196, 210, 1);
+                box-shadow: 0px 0px 4px black;
+                font-size: .9375rem;
+                font-weight: bold;
+                border: none;
+                border-radius: .1875rem;
+                cursor: pointer;
+                transition: 1s;
+                &:hover {
+                    .buttonForm:hover {
+                        background-color: #5F5A7C;
+                        color: white;
+                        box-shadow: 0 0 10px black;
+                    }
+                }
+            }
+        }
+        .destinationInput {
+            justify-self: center;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        .dateInput {
+            justify-self: center;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;    
+        }
+        .guestInput {
+            justify-self: center;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;   
+        }
+    }
 }
-.reservationWindow form {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 20% 40% 20% 20%;
-}
-.reservationWindow form legend {
-  font-size: 1.2rem;
-  font-family: "Playfair Display", serif;
-}
-.reservationWindow form input {
-  padding: 0.3125rem;
-  height: 2.8125rem;
-}
-.reservationWindow form .buttonFormInput {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-.reservationWindow form .buttonFormInput .buttonForm {
-  width: 8rem;
-  background-color: rgb(198, 196, 210);
-  box-shadow: 0px 0px 4px black;
-  font-size: 0.9375rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 0.1875rem;
-  cursor: pointer;
-  transition: 1s;
-}
-.reservationWindow form .buttonFormInput .buttonForm:hover .buttonForm:hover {
-  background-color: #5F5A7C;
-  color: white;
-  box-shadow: 0 0 10px black;
-}
-.reservationWindow form .destinationInput {
-  justify-self: center;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-.reservationWindow form .dateInput {
-  justify-self: center;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-.reservationWindow form .guestInput {
-  justify-self: center;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-
+*/
 .loungesAndSuites {
   padding: 1.25rem 0rem;
 }
@@ -685,12 +626,13 @@ footer .infoFooter .footerList ul li {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  gap: 6.25rem;
 }
 
 main .mainServicesSection {
   background-image: url(../assets/img/resto-main.jpg);
   background-repeat: no-repeat;
-  background-size: 100rem 56.25rem;
+  background-size: cover;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -715,9 +657,10 @@ main .mainServicesSection div h2 {
 }
 main .servicesCards {
   background-color: #1e1a34;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 6.25rem;
   margin: 6.25rem;
 }
 main .servicesCards .serviceCard {
@@ -730,6 +673,17 @@ main .servicesCards .serviceCard {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: 1s;
+}
+main .servicesCards .serviceCard .animation {
+  display: none;
+  position: absolute;
+  font-family: "Antic", sans-serif;
+  font-size: 1.5rem;
+  margin: auto;
+  cursor: pointer;
+  font-weight: bolder;
+  transition: 1s;
 }
 main .servicesCards .serviceCard img {
   width: 21.6875rem;
@@ -743,6 +697,19 @@ main .servicesCards .serviceCard h4 {
 main .servicesCards .serviceCard p {
   font-family: "Antic", sans-serif;
   text-align: center;
+}
+main .servicesCards .serviceCard:hover {
+  background-color: rgba(222, 217, 253, 0.2);
+  transition: 1s;
+}
+main .servicesCards .serviceCard:hover img {
+  opacity: 0.2;
+}
+main .servicesCards .serviceCard:hover .animation {
+  display: flex;
+  align-items: center;
+  color: white;
+  transform: scale(1.2);
 }
 
 .eventsSection {
@@ -979,6 +946,780 @@ main .servicesCards .serviceCard p {
   background-color: #353150;
   color: white;
   box-shadow: 0 0 0.625rem black;
+}
+
+@media (max-width: 1400px) {
+  .mainSection .mainSlogan {
+    width: 34rem;
+    height: 12rem;
+  }
+  .mainSection .mainSlogan p {
+    font-size: 1.8rem;
+  }
+  .mainSection .mainSlogan h2 {
+    font-size: 3rem;
+  }
+  .thirdSection .theHotel .theHotelInfo h3 {
+    font-size: 1.25rem;
+  }
+  .thirdSection .theHotel .theHotelInfo p {
+    font-size: 1.4rem;
+  }
+  .thirdSection .designAndComfort .designAndComfortInfo h3 {
+    font-size: 1.25rem;
+  }
+  .thirdSection .designAndComfort .designAndComfortInfo p {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 1024px) {
+  .mainSection .mainSlogan {
+    width: 27rem;
+    height: 10rem;
+  }
+  .mainSection .mainSlogan p {
+    font-size: 1.5rem;
+  }
+  .mainSection .mainSlogan h2 {
+    font-size: 2.5rem;
+  }
+  .mainSection .reservationWindow form legend {
+    font-size: 1rem;
+  }
+  .mainSection .reservationWindow form .destinationInput input {
+    width: 9.375rem;
+  }
+  .mainSection .reservationWindow form .dateInput input {
+    width: 9.375rem;
+  }
+  .mainSection .reservationWindow form .guestInput input {
+    width: 9.375rem;
+  }
+  .mainSection .reservationWindow form .buttonFormInput input {
+    width: 9.375rem;
+  }
+  .thirdSection .theHotel .theHotelInfo h3 {
+    font-size: 1.25rem;
+  }
+  .thirdSection .theHotel .theHotelInfo p {
+    font-size: 1.2rem;
+  }
+  .thirdSection .designAndComfort .designAndComfortInfo h3 {
+    font-size: 1.25rem;
+  }
+  .thirdSection .designAndComfort .designAndComfortInfo p {
+    font-size: 1.2rem;
+  }
+  /* accommodations */
+  .sectionMainAcc div {
+    width: 30rem;
+  }
+  .sectionMainAcc div h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 991px) {
+  header .navBoot .menuContainer {
+    height: 6.875rem;
+  }
+  header .navBoot .menuContainer .colapsoNav .barraNavegacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1e1a34;
+    width: 50%;
+    height: 82vh;
+    margin: 0;
+  }
+  header .navBoot .menuContainer .colapsoNav .barraNavegacion li a {
+    font-size: 1.25rem;
+  }
+  header .navBoot .menuContainer .colapsoNav form button {
+    display: none;
+  }
+  .mainSection .mainSlogan {
+    width: 23rem;
+  }
+  .mainSection .reservationWindow {
+    height: 9.375rem;
+  }
+  .mainSection .reservationWindow form {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "dest date gues" "dest date but";
+  }
+  .mainSection .reservationWindow form legend {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+  .mainSection .reservationWindow form .destinationInput {
+    grid-area: dest;
+  }
+  .mainSection .reservationWindow form .destinationInput input {
+    width: 9.375rem;
+  }
+  .mainSection .reservationWindow form .dateInput {
+    grid-area: date;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .mainSection .reservationWindow form .dateInput .checkOutIn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainSection .reservationWindow form .dateInput .checkOutIn input {
+    width: 9.375rem;
+  }
+  .mainSection .reservationWindow form .guestInput {
+    grid-area: gues;
+    align-self: flex-end;
+  }
+  .mainSection .reservationWindow form .guestInput input {
+    width: 9.375rem;
+  }
+  .mainSection .reservationWindow form .buttonFormInput {
+    grid-area: but;
+    align-self: center;
+  }
+  .secondarySection .openIntro .row .col-10 {
+    width: 100%;
+  }
+  .secondarySection .openIntro .divisoryLane {
+    display: none;
+  }
+  /* accommodations */
+  /* no hay estilo agregado */
+  /* services */
+  main .mainServicesSection div {
+    width: 30rem;
+    height: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .mainServicesSection div h2 {
+    font-size: 3rem;
+  }
+  main .servicesCards {
+    gap: 1.5625rem;
+  }
+}
+@media (max-width: 768px) {
+  .mainSection {
+    background-position-y: 6.875rem;
+  }
+  .mainSection .mainSlogan {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-right: 0.625rem;
+    margin-bottom: 0.625rem;
+  }
+  .mainSection .reservationWindow {
+    display: none;
+  }
+  .secondarySection {
+    display: block;
+    height: 180vh;
+  }
+  .secondarySection .reservationResponsive {
+    display: block;
+    width: 100%;
+    height: 18.75rem;
+    background-color: rgba(198, 196, 210, 0.8);
+    color: rgb(0, 0, 0);
+    backdrop-filter: blur(4px);
+    margin: 2.5rem 0;
+  }
+  .secondarySection .reservationResponsive form {
+    width: 100%;
+    height: 18.75rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "dr1 dr1 dr3 dr3" "dr2 dr2 dr2 dr2" "dr4 dr4 dr4 dr4";
+  }
+  .secondarySection .reservationResponsive form legend {
+    font-family: "Playfair Display", serif;
+  }
+  .secondarySection .reservationResponsive form .destinationInputResponsive {
+    grid-area: dr1;
+    grid-template-rows: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: flex-end;
+    align-self: center;
+    margin-right: 0.625rem;
+    height: 100%;
+  }
+  .secondarySection .reservationResponsive form .destinationInputResponsive input {
+    width: 15.625rem;
+    height: 3.125rem;
+  }
+  .secondarySection .reservationResponsive form .dateInputResponsive {
+    width: 100%;
+    grid-area: dr2;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "c1 c1" "c2 c3";
+  }
+  .secondarySection .reservationResponsive form .dateInputResponsive .dateTittle {
+    grid-area: c1;
+    align-self: flex-end;
+    justify-self: center;
+  }
+  .secondarySection .reservationResponsive form .dateInputResponsive .checkInResponsive {
+    grid-area: c2;
+    align-self: center;
+    justify-self: flex-end;
+    margin-right: 0.625rem;
+  }
+  .secondarySection .reservationResponsive form .dateInputResponsive .checkInResponsive input {
+    width: 12.5rem;
+    height: 3.125rem;
+  }
+  .secondarySection .reservationResponsive form .dateInputResponsive .checkOutResponsive {
+    grid-area: c3;
+    align-self: center;
+    justify-self: flex-start;
+    margin-left: 0.4375rem;
+  }
+  .secondarySection .reservationResponsive form .dateInputResponsive .checkOutResponsive input {
+    width: 12.5rem;
+    height: 3.125rem;
+  }
+  .secondarySection .reservationResponsive .guestInputResponsive {
+    height: 6.25rem;
+    grid-area: dr3;
+    justify-self: flex-start;
+    align-self: center;
+    margin-left: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .secondarySection .reservationResponsive .guestInputResponsive input {
+    width: 15.625rem;
+    height: 3.125rem;
+  }
+  .secondarySection .reservationResponsive .buttonFormInputResponsive {
+    grid-area: dr4;
+    align-self: center;
+    justify-self: center;
+  }
+  .secondarySection .reservationResponsive .buttonFormInputResponsive .buttonForm {
+    background-color: #1e1a34;
+    color: #C6C4D2;
+    height: 3.125rem;
+  }
+  .thirdSection .theHotel {
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .thirdSection .theHotel .theHotelInfo {
+    display: none;
+  }
+  .thirdSection .theHotel .pool1 {
+    padding: 0;
+    height: 31.25rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    justify-content: flex-start;
+  }
+  .thirdSection .theHotel .pool1 .theHotelInfoResponsive {
+    display: block;
+    grid-column: 1/2;
+    background-color: rgba(198, 196, 210, 0.4);
+    color: rgb(0, 0, 0);
+    backdrop-filter: blur(4px);
+    justify-self: flex-start;
+    align-self: center;
+    width: 100%;
+    height: 31.25rem;
+    margin-left: 0;
+  }
+  .thirdSection .theHotel .pool1 .theHotelInfoResponsive h3 {
+    color: black;
+    font-weight: bold;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+  }
+  .thirdSection .theHotel .pool1 .theHotelInfoResponsive p {
+    font-family: "Antic", sans-serif;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin: 0.3125rem;
+  }
+  .thirdSection .designAndComfort {
+    margin: 6.25rem 0;
+  }
+  .thirdSection .designAndComfort .airVision {
+    grid-column: 1/3;
+    padding: 0;
+    height: 31.25rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    justify-content: flex-end;
+  }
+  .thirdSection .designAndComfort .airVision .designAndComfortInfoResponsive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 2/3;
+    background-color: rgba(198, 196, 210, 0.4);
+    color: rgb(0, 0, 0);
+    backdrop-filter: blur(4px);
+    justify-self: flex-start;
+    align-self: center;
+    width: 100%;
+    height: 31.25rem;
+    margin-left: 0;
+  }
+  .thirdSection .designAndComfort .airVision .designAndComfortInfoResponsive h3 {
+    color: black;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+    font-size: 1.25rem;
+  }
+  .thirdSection .designAndComfort .airVision .designAndComfortInfoResponsive p {
+    font-size: 1rem;
+    color: black;
+    font-weight: bolder;
+    font-family: "Antic", sans-serif;
+    margin: 0.3125rem;
+  }
+  .thirdSection .designAndComfort .designAndComfortInfo {
+    display: none;
+  }
+  footer {
+    height: 23.4375rem;
+  }
+  /* accommodations */
+  .sectionMainAcc {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .sectionMainAcc div {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+  .sectionSecondaryAcc .StandardRoomsCards .card {
+    display: none;
+  }
+  .sectionSecondaryAcc .StandardRoomsCards .cardResponsive {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1e1a34;
+    width: 100%;
+    height: 18.75rem;
+  }
+  .sectionSecondaryAcc .StandardRoomsCards .cardResponsive .infoImpar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+  .sectionSecondaryAcc .StandardRoomsCards .cardResponsive .infoImpar h4 {
+    font-size: 1.2rem;
+    color: white;
+    font-family: "Playfair Display", serif;
+  }
+  .sectionSecondaryAcc .StandardRoomsCards .cardResponsive .infoImpar .icon {
+    display: flex;
+    font-size: 1.875rem;
+    color: white;
+  }
+  .sectionSecondaryAcc .StandardRoomsCards .cardResponsive .infoImpar .icon img {
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+  .sectionSecondaryAcc .StandardRoomsCards .cardResponsive .infoImpar button {
+    height: 2.5rem;
+    width: 8rem;
+    background-color: rgb(198, 196, 210);
+    box-shadow: 0px 0px 4px black;
+    font-size: 0.9375rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.1875rem;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .sectionSecondaryAcc .StandardRoomsCards .cardResponsive .infoImpar button:hover {
+    background-color: #5F5A7C;
+    color: white;
+    box-shadow: 0 0 10px black;
+  }
+  .sectionSecondaryAcc .StandardRoomsCards .cardResponsive img {
+    margin-top: 5px;
+    width: 22.625rem;
+    height: 14.125rem;
+  }
+  .loungesAndSuites .loungesAndSuitesCards .cardTwo {
+    display: none;
+  }
+  .loungesAndSuites .loungesAndSuitesCards .cardTwoResponsive {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #C6C4D2;
+    width: 100%;
+    height: 18.75rem;
+  }
+  .loungesAndSuites .loungesAndSuitesCards .cardTwoResponsive .infoPar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+  .loungesAndSuites .loungesAndSuitesCards .cardTwoResponsive .infoPar .h4 {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    font-family: "Playfair Display", serif;
+  }
+  .loungesAndSuites .loungesAndSuitesCards .cardTwoResponsive .infoPar .icon {
+    display: flex;
+    font-size: 1.875rem;
+    color: rgb(0, 0, 0);
+  }
+  .loungesAndSuites .loungesAndSuitesCards .cardTwoResponsive .infoPar .icon img {
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+  .loungesAndSuites .loungesAndSuitesCards .cardTwoResponsive .infoPar button {
+    height: 2.5rem;
+    width: 8rem;
+    background-color: rgb(198, 196, 210);
+    box-shadow: 0px 0px 4px black;
+    font-size: 0.9375rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.1875rem;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .loungesAndSuites .loungesAndSuitesCards .cardTwoResponsive .infoPar button:hover {
+    background-color: #5F5A7C;
+    color: white;
+    box-shadow: 0 0 10px black;
+  }
+  .loungesAndSuites .loungesAndSuitesCards .cardTwoResponsive img {
+    margin-top: 5px;
+    width: 22.625rem;
+    height: 14.125rem;
+  }
+  /* services */
+  main .mainServicesSection div {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    width: 28rem;
+    height: 9rem;
+    align-self: center;
+  }
+  main .servicesCards {
+    gap: 0;
+    margin: 3.125rem 0;
+  }
+}
+@media (max-width: 575px) {
+  header .navBoot .menuContainer {
+    height: 6.875rem;
+  }
+  header .navBoot .menuContainer .colapsoNav .barraNavegacion {
+    width: 100%;
+  }
+  header .navBoot .menuContainer .colapsoNav .barraNavegacion li a {
+    font-size: 1.125rem;
+  }
+  .secondarySection .reservationResponsive form .destinationInputResponsive input {
+    width: 12.5rem;
+  }
+  .secondarySection .reservationResponsive form .guestInputResponsive input {
+    width: 12.5rem;
+  }
+  .thirdSection .theHotel .pool1 .theHotelInfoResponsive h3 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  .thirdSection .theHotel .pool1 .theHotelInfoResponsive p {
+    font-size: 0.9375rem;
+  }
+  .thirdSection .designAndComfort .airVision .designAndComfortInfoResponsive h3 {
+    font-size: 1rem;
+  }
+  .thirdSection .designAndComfort .airVision .designAndComfortInfoResponsive p {
+    font-size: 0.9375rem;
+  }
+  /* accommodations */
+  .sectionMainAcc div {
+    width: 18.75rem;
+    height: 7.8125rem;
+    margin: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sectionMainAcc div h2 {
+    font-size: 2rem;
+  }
+  .sectionSecondaryAcc .StandardRoomsCards .cardResponsive .infoImpar img {
+    width: 18.1rem;
+    height: 11.3rem;
+  }
+  .sectionSecondaryAcc .StandardRoomsCards .cardResponsive .infoImpar h4 {
+    font-size: 0.96rem;
+  }
+  .sectionSecondaryAcc .StandardRoomsCards .cardResponsive .infoImpar .icon {
+    font-size: 1.5rem;
+  }
+  .sectionSecondaryAcc .StandardRoomsCards .cardResponsive .infoImpar .icon img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .sectionSecondaryAcc .StandardRoomsCards .cardResponsive img {
+    width: 18.1rem;
+    height: 11.3rem;
+  }
+  .loungesAndSuites .loungesAndSuitesCards .cardTwoResponsive img {
+    width: 18.1rem;
+    height: 11.3rem;
+  }
+  .loungesAndSuites .loungesAndSuitesCards .cardTwoResponsive .infoPar h4 {
+    font-size: 0.96rem;
+  }
+  .loungesAndSuites .loungesAndSuitesCards .cardTwoResponsive .infoPar .icon {
+    font-size: 1.5rem;
+  }
+  .loungesAndSuites .loungesAndSuitesCards .cardTwoResponsive .infoPar .icon img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .secondarySection .reservationResponsive form .destinationInputResponsive input {
+    width: 9.375rem;
+  }
+  .secondarySection .reservationResponsive form .dateInputResponsive .checkInResponsive input {
+    width: 9.375rem;
+  }
+  .secondarySection .reservationResponsive form .dateInputResponsive .checkOutResponsive input {
+    width: 9.375rem;
+  }
+  .secondarySection .reservationResponsive form .guestInputResponsive input {
+    width: 9.375rem;
+  }
+  .thirdSection {
+    height: 250vh;
+  }
+  .thirdSection .theHotel {
+    margin: 3.125rem 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 65% 35%;
+  }
+  .thirdSection .theHotel .theHotelInfo {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    grid-row: 2/3;
+    background-image: none;
+    background-color: rgb(198, 196, 210);
+  }
+  .thirdSection .theHotel .theHotelInfo h3 {
+    font-size: 1.1rem;
+    color: black;
+  }
+  .thirdSection .theHotel .theHotelInfo p {
+    font-size: 0.8125rem;
+    color: black;
+    font-weight: bolder;
+    margin: 0;
+  }
+  .thirdSection .theHotel .pool1 {
+    height: 100%;
+    grid-row: 1/2;
+  }
+  .thirdSection .theHotel .pool1 .theHotelInfoResponsive {
+    display: none;
+  }
+  .thirdSection .designAndComfort {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 65% 35%;
+  }
+  .thirdSection .designAndComfort .airVision {
+    height: 100%;
+    grid-column: 1/2;
+  }
+  .thirdSection .designAndComfort .airVision .designAndComfortInfoResponsive {
+    display: none;
+  }
+  .thirdSection .designAndComfort .designAndComfortInfo {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    grid-row: 2/3;
+    background-image: none;
+    background-color: rgb(198, 196, 210);
+  }
+  .thirdSection .designAndComfort .designAndComfortInfo h3 {
+    font-size: 1.1rem;
+    color: black;
+  }
+  .thirdSection .designAndComfort .designAndComfortInfo p {
+    font-family: "Antic", sans-serif;
+    font-size: 0.8125rem;
+    color: black;
+    font-weight: bolder;
+    margin: 0;
+  }
+  footer .infoFooter {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3125rem;
+  }
+  footer .infoFooter .logoMobile {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  footer .infoFooter .directionAndContact {
+    text-align: center;
+  }
+  footer .infoFooter .footerList {
+    display: none;
+  }
+  footer .lastLine {
+    justify-content: center;
+  }
+  footer .lastLine div {
+    display: none;
+  }
+  footer .lastLine div span {
+    display: none;
+  }
+  footer .lastLine div span .logoFooter {
+    display: none;
+  }
+  /* accommodations */
+  .sectionSecondaryAcc .titleSectionOne h3 {
+    font-size: 2rem;
+  }
+  .sectionSecondaryAcc .StandardRoomsCards .cardResponsive img {
+    width: 13.032rem;
+    height: 8.136rem;
+  }
+  .sectionSecondaryAcc .StandardRoomsCards .cardResponsive .infoImpar {
+    align-items: center;
+  }
+  .sectionSecondaryAcc .StandardRoomsCards .cardResponsive .infoImpar button {
+    width: 6.125rem;
+    font-size: 0.75rem;
+  }
+  .loungesAndSuites .titleSectionTwo h3 {
+    font-size: 2rem;
+  }
+  .loungesAndSuites .loungesAndSuitesCards .cardTwoResponsive img {
+    width: 13.032rem;
+    height: 8.136rem;
+  }
+  .loungesAndSuites .loungesAndSuitesCards .cardTwoResponsive .infoPar {
+    align-items: center;
+  }
+  .loungesAndSuites .loungesAndSuitesCards .cardTwoResponsive .infoPar button {
+    width: 6.125rem;
+    font-size: 0.75rem;
+  }
+  /* services */
+  main .mainServicesSection div {
+    width: 20rem;
+    height: 7.5rem;
+  }
+  main .mainServicesSection div h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 375px) {
+  .mainSection .mainSlogan {
+    width: 18.75rem;
+  }
+  .secondarySection .reservationResponsive form .destinationInputResponsive {
+    justify-content: center;
+  }
+  .secondarySection .reservationResponsive form .destinationInputResponsive legend {
+    font-size: 0.875rem;
+    font-weight: bolder;
+  }
+  .secondarySection .reservationResponsive form .destinationInputResponsive input {
+    width: 7.8125rem;
+  }
+  .secondarySection .reservationResponsive form .guestInputResponsive {
+    justify-content: center;
+    margin-left: 0.6875rem;
+  }
+  .secondarySection .reservationResponsive form .guestInputResponsive legend {
+    font-size: 0.875rem;
+    font-weight: bolder;
+  }
+  .secondarySection .reservationResponsive form .guestInputResponsive input {
+    width: 7.8125rem;
+  }
+  .secondarySection .reservationResponsive form .dateInputResponsive legend {
+    font-size: 0.875rem;
+    font-weight: bolder;
+  }
+  .secondarySection .reservationResponsive form .dateInputResponsive .checkInResponsive input {
+    width: 7.8125rem;
+  }
+  .secondarySection .reservationResponsive form .dateInputResponsive .checkOutResponsive input {
+    width: 7.8125rem;
+  }
+  .thirdSection .theHotel .theHotelInfo p {
+    font-size: 0.7813rem;
+  }
+  /* services */
+  main .mainServicesSection div {
+    width: 18rem;
+  }
+  main .servicesCards .serviceCard {
+    width: 17.35rem;
+    height: 19.65rem;
+  }
+  main .servicesCards .serviceCard img {
+    width: 17.35rem;
+    height: 11.6rem;
+  }
+  main .servicesCards .serviceCard h4 {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+  main .servicesCards .serviceCard p {
+    font-size: 0.75rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,192 @@
+@media (max-width:480px) {
+    .secondarySection {
+        .reservationResponsive {
+            form {
+                .destinationInputResponsive {
+                    input {
+                        width: 9.375rem;
+                    }
+                }
+                .dateInputResponsive {
+                    .checkInResponsive {
+                        input {
+                            width: 9.375rem;
+                        }
+                    }
+                    .checkOutResponsive {
+                        input {
+                            width: 9.375rem;
+                        }
+                    }
+                }
+                .guestInputResponsive {
+                    input {
+                        width: 9.375rem;
+                    }
+                }
+            }
+        }
+    }
+    .thirdSection {
+        height: 250vh;
+        .theHotel {
+            margin: 3.125rem 0;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 65% 35%;
+            .theHotelInfo {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                grid-row: 2/3;
+                background-image: none;
+                background-color: $backSec;
+                h3 {
+                    font-size: 1.1rem;
+                    color: black;
+                }
+                p {
+                    font-size: .8125rem;
+                    color: black;
+                    font-weight: bolder;
+                    margin: 0;
+                }
+            }
+            .pool1 {
+                height: 100%;
+                grid-row: 1/2;
+                .theHotelInfoResponsive {
+                    display: none;
+                }
+            }
+        }
+        .designAndComfort {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 65% 35%;
+            .airVision {
+                height: 100%;
+                grid-column: 1/2;
+                .designAndComfortInfoResponsive {
+                    display: none;
+                }
+            }
+            .designAndComfortInfo {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                grid-row: 2/3;
+                background-image: none;
+                background-color: $backSec;
+                h3 {
+                    font-size: 1.1rem;
+                    color: black;
+                }
+                p {
+                    font-family: $parrafo;
+                    font-size: .8125rem;
+                    color: black;
+                    font-weight: bolder;
+                    margin: 0;
+                }
+            }
+            
+        }
+    }
+    footer {
+        .infoFooter {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: .3125rem;
+            .logoMobile {
+                display: block;
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+            .directionAndContact {
+                text-align: center;
+            }
+            .footerList {
+                display: none;
+            }
+        }
+        .lastLine {
+            justify-content: center;
+            div {
+                display: none;
+                span {
+                    display: none;
+                    .logoFooter {
+                        display: none;
+                    }
+
+                }
+            }
+        }
+
+    }
+    /* accommodations */
+    .sectionSecondaryAcc {
+        .titleSectionOne {
+            h3 {
+                font-size: 2rem;
+            }
+        }
+        .StandardRoomsCards {
+            .cardResponsive {
+                img {
+                    width: 13.032rem;
+                    height: 8.136rem;
+                }
+                .infoImpar {
+                    align-items: center;
+                    button {
+                        width: 6.125rem;
+                        font-size: .75rem ;
+                    }
+                }
+            }
+        }
+    }
+    .loungesAndSuites {
+        .titleSectionTwo {
+            h3 {
+                font-size: 2rem;
+            }
+        }
+        .loungesAndSuitesCards {
+            .cardTwoResponsive {
+                img {
+                    width: 13.032rem;
+                    height: 8.136rem;
+                }
+                .infoPar {
+                    align-items: center;
+                    button {
+                        width: 6.125rem;
+                        font-size: .75rem ;
+                    }
+                }
+            }
+        }
+    }
+    /* services */
+    main {
+        .mainServicesSection {
+            div {
+                width: 20rem;
+                height: 7.5rem;
+                h2 {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+}

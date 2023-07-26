@@ -1,0 +1,85 @@
+@media (max-width:375px) {
+    .mainSection {
+        .mainSlogan {
+            width: 18.75rem;
+        }
+    }
+    .secondarySection {
+        .reservationResponsive {
+            form {
+                .destinationInputResponsive{
+                    justify-content: center;
+                    legend {
+                        font-size: .875rem;
+                        font-weight: bolder;
+                    }
+                    input {
+                        width: 7.8125rem;
+                    }
+                }
+                .guestInputResponsive{
+                    justify-content: center;
+                    margin-left: .6875rem;
+                    legend {
+                        font-size: .875rem;
+                        font-weight: bolder;
+                    }
+                    input {
+                        width: 7.8125rem;
+                    }
+                }
+                .dateInputResponsive {
+                    legend {
+                        font-size: .875rem;
+                        font-weight: bolder
+                    }
+                    .checkInResponsive {
+                        input {
+                            width: 7.8125rem;
+                        }
+                    }
+                    .checkOutResponsive {
+                        input {
+                            width: 7.8125rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .thirdSection {
+        .theHotel {
+            .theHotelInfo {
+                p {
+                    font-size: .7813rem;
+                }
+            }
+        }
+    }
+    /* services */
+    main {
+        .mainServicesSection {
+            div {
+                width: 18rem;
+                
+            }
+        }
+        .servicesCards {
+            .serviceCard {
+                width: 17.35rem;
+                height: 19.65rem ;
+                img {
+                    width: 17.35rem;
+                    height: 11.6rem;
+                }
+                h4 {
+                    font-size: 1rem ;
+                    font-weight: bolder;
+                }
+                p {
+                    font-size: .75rem;
+                }
+            }
+        }
+    }
+}

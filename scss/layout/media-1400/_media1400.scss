@@ -1,0 +1,37 @@
+@media (max-width:1400px) {
+    .mainSection {
+        .mainSlogan {
+            width: 34rem;
+            height: 12rem;
+            p {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 3rem;
+            }
+        }
+    }
+    .thirdSection {
+        .theHotel {
+            .theHotelInfo {
+                h3 {
+                    font-size: 1.25rem;
+                }
+                p {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        .designAndComfort {
+            .designAndComfortInfo {
+                h3 {
+                    font-size: 1.25rem;
+                }
+                p {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+
+}

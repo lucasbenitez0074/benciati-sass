@@ -1,0 +1,125 @@
+@media (max-width:575px) {
+    header {
+        .navBoot {
+            .menuContainer {
+                height: 6.875rem;
+                .colapsoNav {
+                    .barraNavegacion {
+                        width: 100%;
+                        li {
+                            a {
+                                font-size: 1.125rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .secondarySection {
+        .reservationResponsive{
+            form {
+                .destinationInputResponsive {
+                    input {
+                        width: 12.5rem;
+                    }
+                }
+                .guestInputResponsive {
+                    input {
+                        width: 12.5rem;
+                    }
+                }
+            }
+        }
+    }
+    .thirdSection {
+        .theHotel{ 
+            .pool1 {
+                .theHotelInfoResponsive {
+                    h3 {
+                        font-size: 1.25rem;
+                        text-align: center;
+                    }
+                    p {
+                        font-size: .9375rem;
+                    }
+                }
+            }
+        }
+        .designAndComfort {
+            .airVision{
+                .designAndComfortInfoResponsive {
+                    h3 {
+                        font-size: 1rem;
+                    }
+                    p {
+                        font-size: .9375rem;
+                    }
+                }
+            }
+        }
+    }
+    /* accommodations */
+    .sectionMainAcc {
+        div {
+            width: 18.75rem;
+            height: 7.8125rem;
+            margin: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h2 {
+                font-size: 2rem ;
+            }
+        }
+    }
+    .sectionSecondaryAcc{
+        .StandardRoomsCards {
+            .cardResponsive {
+                .infoImpar {
+                    img {
+                        width: 18.1rem;
+                        height: 11.3rem;
+                    }
+                    h4 {
+                        font-size: .96rem ;
+                    }
+                    .icon {
+                        font-size: 1.5rem;
+                        img {
+                            width: 1.5rem;
+                            height: 1.5rem;
+                        }
+                    }
+                }
+                img {
+                    width: 18.1rem;
+                    height: 11.3rem;
+                }
+            }
+            
+        }
+    }
+    .loungesAndSuites {
+        .loungesAndSuitesCards{
+            .cardTwoResponsive {
+                img {
+                    width: 18.1rem;
+                    height: 11.3rem;
+                }
+                .infoPar {
+                    h4 {
+                        font-size: .96rem ;
+                    }
+                    .icon {
+                        font-size: 1.5rem;
+                        img {
+                            width: 1.5rem;
+                            height: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

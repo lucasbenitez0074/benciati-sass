@@ -1,0 +1,73 @@
+@media (max-width:1024px){
+    .mainSection {
+        .mainSlogan {
+            width: 27rem;
+            height: 10rem;
+            p {
+                font-size: 1.5rem;
+            }
+            h2 {
+                font-size: 2.5rem;
+            }
+        }
+        .reservationWindow {
+            form {
+                legend {
+                    font-size: 1rem;
+                }
+                .destinationInput {
+                    input {
+                        width: 9.375rem;
+                    }
+                }
+                .dateInput {
+                    input {
+                        width: 9.375rem;
+                    }
+                }
+                .guestInput {
+                    input {
+                        width: 9.375rem;
+                    }
+                }
+                .buttonFormInput {
+                    input {
+                        width: 9.375rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .thirdSection {
+        .theHotel {
+            .theHotelInfo {
+                h3 {
+                    font-size: 1.25rem;
+                }
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .designAndComfort {
+            .designAndComfortInfo {
+                h3 {
+                    font-size: 1.25rem;
+                }
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    /* accommodations */
+    .sectionMainAcc {
+        div {
+            width: 30rem ;
+            h2 {
+                font-size: 3rem;
+            }
+        }
+    }
+}
