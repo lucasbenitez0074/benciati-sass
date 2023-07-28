@@ -11,6 +11,7 @@
             }
         }
     }
+    /* accommodations */
     .thirdSection {
         .theHotel {
             .theHotelInfo {
@@ -30,6 +31,81 @@
                 p {
                     font-size: 1.4rem;
                 }
+            }
+        }
+    }
+    /* events */
+    .eventsSection {
+        div {
+            width: 21.875rem;
+            height: 9.375rem;
+            h2{
+                font-size: 3rem;
+            }
+        }
+    }
+    .sectionContainer {
+        .socialEvents {
+            .socialEventsGrid{ 
+                .socialEventImgCont {
+
+                }
+                .containSocialInfo {
+                    h3 {
+                        font-size: 2.625rem ;
+                    }
+                    p {
+                        font-size: 1.25rem ;
+                    }
+                }
+            }
+        }
+        .gallery {
+            img {
+                width: 16.4rem;
+                height: 10.96rem;
+                &:hover {
+                    width: 22.95rem;
+                    height: 15.3438rem;
+                }
+            }
+        }
+        .conferenceRooms {
+            .conferenceRoomsGrid{
+                .conferenceRooomsImgCont{
+
+                }
+                .containConferenceInfo {
+                    h3 {
+                        font-size: 2.375rem;
+                    }
+                    p {
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+        }
+    }
+    /* contact */   
+    .contenedor {
+        .frequentQuestions {
+            h3 {
+                font-size: 2rem;
+            }
+            .questionsContainer{ 
+                .question {
+                    width: 80%;
+                    ul {
+                        li {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+        .contactForm {
+            h3 {
+                font-size: 2rem;
             }
         }
     }

@@ -12,8 +12,8 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navBoot">
+            <div class="menuContainer container-fluid">
                 <div class="marcaHotel">
                     <img src="../assets/icons/hotel-logo-white.png" alt="">
                     <h1>Benciati</h1>
@@ -21,8 +21,8 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse colapsoNav" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 barraNavegacion">
                         <li class="nav-item">
                             <a class="nav-link"  href="../index.html">Home</a>
                         </li>
@@ -58,10 +58,30 @@
                     <div class="containSocialInfo">
                         <h3>SOCIAL EVENTS</h3>
                         <p>At our hotel, we take pride in offering an exceptional experience for unforgettable social events. Whether you're planning an elegant wedding, an anniversary celebration, or a birthday party, our dedicated team of event experts is here to make your dreams come true. Our versatile and elegant spaces are perfectly suited for any occasion.</p>
-                        <p class="verMas"><i>VER MAS.</i></p>
+                        <p class="verMas"><i>SEE MORE.</i></p>
                     </div>
                     <div class="socialEventImgCont">
-                        <img class="socialEventImg" src="../assets/img/social-eventes-main.jpg" alt="">
+                        <img class="socialEventImg " src="../assets/img/social-eventes-main.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="carouselGal">
+                <div id="carouselExampleIndicators" class="carousel slide carouselPos">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../assets/img/socialevent1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/img/socialevents2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/img/socialevents3.jpg" class="d-block w-100" alt="...">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -78,7 +98,7 @@
                     <div class="containConferenceInfo">
                         <h3>CONFERENCE ROOMS</h3>
                         <p> we provide a state-of-the-art conference room that caters to all your professional event needs. Whether you're organizing a corporate meeting, a training session, or a conference, our dedicated conference room is designed to offer a productive and comfortable environment. </p>
-                        <p class="verMasP"><i>VER MAS.</i></p>
+                        <p class="verMasP"><i>SEE MORE.</i></p>
                     </div>
                 </div>
             </section>
@@ -86,6 +106,7 @@
     </main>
     <footer class="container-fluid">
         <div class="infoFooter">
+            <img src="../assets/icons/hotel-logo-white.png" alt="" class="logoMobile">
             <div class="directionAndContact">
                 <p class="number">+ 54 11 4808.2100</p>
                 <p class="mail">reservas@benciati.com.ar</p>
@@ -101,12 +122,14 @@
                 </ul>
             </div>
         </div>
-        <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top lastLine">
-            <div class="col-md-4 d-flex align-items-center">
+        <div class="d-flex flex-wrap align-items-center py-3 my-4 border-top lastLine">
+            <div class="col-md-4 ">
                     <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
                     <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
                     </a>
-                <span class="mb-3 mb-md-0 text-body-secondary"><img src="../assets/icons/hotel-logo-white.png" alt="" class="logoFooter"></span>
+                <span class="mb-3 mb-md-0 text-body-secondary">
+                <img src="../assets/icons/hotel-logo-white.png" alt="" class="logoFooter">
+                </span>
             </div>
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
                 <li class="ms-3"><img src="../assets/icons/facebookgrandeBlanco.png" alt=""></li>
@@ -114,6 +137,7 @@
                 <li class="ms-3"><img src="../assets/icons/twitter-grandeWhite.png" alt=""></li>
                 <li class="ms-3"><img src="../assets/icons/instagramgrandeWhite.png" alt=""></li>
             </ul>
+            
         </div>
     </footer>
 

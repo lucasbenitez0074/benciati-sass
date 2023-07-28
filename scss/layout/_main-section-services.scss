@@ -33,6 +33,7 @@ main {
         gap: 6.25rem;
         margin: 6.25rem;    
         .serviceCard {
+            cursor: pointer;
             width: 21.6875rem;
             height: 24.5625rem;
             background-color: rgba(222, 217, 253, 0.8);
@@ -64,8 +65,9 @@ main {
                 font-family: $titulo;
             }
             p {
+                margin:0 .625rem .625rem .625rem;
                 font-family: $parrafo;
-                text-align: center;
+                
             }
             &:hover {
                 background-color:rgba(222, 217, 253, 0.2);

@@ -12,8 +12,8 @@
 </head>
 <body>
     <header  class="accHeader">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navBoot">
+            <div class="menuContainer container-fluid">
                 <div class="marcaHotel">
                     <img src="../assets/icons/hotel-logo-white.png" alt="">
                     <h1>Benciati</h1>
@@ -21,8 +21,8 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse colapsoNav" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 barraNavegacion">
                         <li class="nav-item">
                             <a class="nav-link" href="../index.html">Home</a>
                         </li>
@@ -53,41 +53,36 @@
                 <div class="subrayado"></div>
                 <div class="questionsContainer">
                     <div class="question">
-                        <img class="itemQuestion" src="../assets/icons/list.png" alt="">
-                        <p>What are the nearby attractions and points of interest near your hotel at each location?</p>
+                        <ul><li>What are the nearby attractions and points of interest near your hotel at each location?</li></ul>
                     </div>
                     <div class="question">
-                        <img class="itemQuestion" src="../assets/icons/list.png" alt="">
-                        <p>Do you offer airport transportation to and from each branch?</p>
+                        <ul><li>Do you offer airport transportation to and from each branch?</li></ul>               
                     </div>
                     <div class="question">
-                        <img class="itemQuestion" src="../assets/icons/list.png" alt="">
-                        <p>What safety measures and cleaning protocols are implemented at each hotel to ensure the guests' safety?</p>
+                        <ul><li>What safety measures and cleaning protocols are implemented at each hotel to ensure the guests' safety?</li></ul> 
                     </div>
                     <div class="question">
-                        <img class="itemQuestion" src="../assets/icons/list.png" alt="">
-                        <p>Are there exclusive entertainment options at each location, such as special events or themed activities?</p>
+                        <ul><li>Are there exclusive entertainment options at each location, such as special events or themed activities?</li></ul>
                     </div>
                     <div class="question">
-                        <img class="itemQuestion" src="../assets/icons/list.png" alt="">
-                        <p>What are the unique features of each branch of your hotel that set it apart?</p>
+                        <ul><li>What are the unique features of each branch of your hotel that set it apart?</li></ul>
                     </div>
                     <div class="question">
-                        <img class="itemQuestion" src="../assets/icons/list.png" alt="">
-                        <p>What additional services do you offer at each hotel, apart from the basic amenities?</p>
+                        <ul><li>What additional services do you offer at each hotel, apart from the basic amenities?</li></ul>
                     </div>
                     <div class="question">
-                        <img class="itemQuestion" src="../assets/icons/list.png" alt="">
-                        <p>What is the cancellation and refund policy for reservations at each location?</p>
+                        <ul><li>What is the cancellation and refund policy for reservations at each location?</li></ul>
                     </div>
                 </div>
             </section>
             <section class="contactForm">
                 <h3>CONTACT US</h3>
-                <div class="subrayado1"></div>
+                <div class="subrayado">
+
+                </div>
                 <p>If you want to write us a suggestion, complaint or query, complete the following form</p>
                 <form action="">
-                    <fieldset>
+                    <fieldset class="container-fluid">
                         <div class="name">
                             <div class="inputName"> 
                                 <legend><b>Name</b></legend>
@@ -99,7 +94,7 @@
                                 <label for="lastname"></label>
                                 <input type="text" id="lastname" placeholder="Lastname" class="lastName" required>
                             </div>
-                            </div>
+                        </div>
                         <div class="email">
                             <legend><b>Email</b></legend>
                             <label for="email"></label>
@@ -122,7 +117,6 @@
                                 <input type="radio" name="opcion" value="yes" required><p>Yes</p>
                             </div>
                         </div>
-                        <div class="subrayado2"></div>
                         <div class="boton">
                             <input type="submit" value="SEND" class="buttonSend">
                         </div>
@@ -133,6 +127,7 @@
     </main>
     <footer class="container-fluid">
         <div class="infoFooter">
+            <img src="../assets/icons/hotel-logo-white.png" alt="" class="logoMobile">
             <div class="directionAndContact">
                 <p class="number">+ 54 11 4808.2100</p>
                 <p class="mail">reservas@benciati.com.ar</p>
@@ -148,12 +143,14 @@
                 </ul>
             </div>
         </div>
-        <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top lastLine">
-            <div class="col-md-4 d-flex align-items-center">
+        <div class="d-flex flex-wrap align-items-center py-3 my-4 border-top lastLine">
+            <div class="col-md-4 ">
                     <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
                     <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
                     </a>
-                <span class="mb-3 mb-md-0 text-body-secondary"><img src="../assets/icons/hotel-logo-white.png" alt="" class="logoFooter"></span>
+                <span class="mb-3 mb-md-0 text-body-secondary">
+                <img src="../assets/icons/hotel-logo-white.png" alt="" class="logoFooter">
+                </span>
             </div>
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
                 <li class="ms-3"><img src="../assets/icons/facebookgrandeBlanco.png" alt=""></li>
@@ -161,6 +158,7 @@
                 <li class="ms-3"><img src="../assets/icons/twitter-grandeWhite.png" alt=""></li>
                 <li class="ms-3"><img src="../assets/icons/instagramgrandeWhite.png" alt=""></li>
             </ul>
+            
         </div>
     </footer>
 

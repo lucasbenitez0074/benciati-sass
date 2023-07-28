@@ -108,7 +108,76 @@
             }   
         }
         .servicesCards {
-            gap: 1.5625rem;
+            margin-left:0 ;
+            margin-right: 0;
+            gap: .625rem;
+        }
+    }
+    /* events */
+    .eventsSection {
+        div {
+            align-self: center;
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+    }
+    .sectionContainer {
+        .socialEvents {
+            .socialEventsGrid {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                .containSocialInfo {
+                    grid-row: 2/3;
+                    h3 {
+                        align-self: flex-start;
+                    }
+                    .verMas {
+                        justify-self: center;
+                    }
+                }
+                .socialEventImgCont {
+                    grid-row: 1/2;
+
+                }
+            }
+        }
+        .gallery {
+            img {
+                width: 8.9688rem;
+                height: 5.9938rem;
+            }
+        }
+        .conferenceRooms {
+            .conferenceRoomsGrid{ 
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                .conferenceRoomsImgCont {
+                    grid-row: 1/2;
+
+                }
+                .containConferenceInfo {
+                    grid-row: 2/3;
+                    h3 {
+                        justify-self: center;
+                        align-self: flex-start;
+                    }
+                    .verMasP {
+                        justify-self: center;
+                    }
+                }
+            }
+        }
+    }
+    .contenedor {
+        .contactForm {
+            form {
+                fieldset {
+                    .name {
+                        gap: 1.25rem;
+
+                    }
+                }
+            }
         }
     }
 }
