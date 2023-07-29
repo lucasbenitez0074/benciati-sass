@@ -2,12 +2,9 @@
     margin-top: 20px;
     width: 24.8125rem;
     height: 31.5rem;
-    background-color: #1e1a34;
-    border: 1px solid #C6C4D2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    background-color: $backMain;
+    border: 1px solid $backSec;
+    @include flex(column,space-around,center,none);
     img {
         margin-top: 5px;
         width: 22.625rem;
@@ -55,11 +52,8 @@
     display: none;
 }
 .cardTwo {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    @include flex(column,space-around,center,none);
     margin-top: 1.5625rem;
-    align-items: center;
     width: 24.8125rem;
     height: 31.5rem;
     background-color:$backSec;
@@ -111,76 +105,3 @@
 .cardTwoResponsive {
     display: none;
 }
-
-/*
-.reservationWindow {
-    justify-self: center;
-    align-self: center;
-    grid-area: cuad3;
-    background-color:rgba(198, 196, 210, 0.4);
-    color: rgba(0,0,0, 1);
-    backdrop-filter: blur(4px);
-    width: 68.75rem;
-    height: 8.75rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    form {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 20% 40% 20% 20%;
-        legend {
-            font-size: 1.2rem;
-            font-family:$titulo; 
-        }
-        input {
-            padding: .3125rem;
-            height: 2.8125rem;
-        }
-        .buttonFormInput {
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            .buttonForm{
-                width: 8rem;
-                background-color: rgba(198, 196, 210, 1);
-                box-shadow: 0px 0px 4px black;
-                font-size: .9375rem;
-                font-weight: bold;
-                border: none;
-                border-radius: .1875rem;
-                cursor: pointer;
-                transition: 1s;
-                &:hover {
-                    .buttonForm:hover {
-                        background-color: #5F5A7C;
-                        color: white;
-                        box-shadow: 0 0 10px black;
-                    }
-                }
-            }
-        }
-        .destinationInput {
-            justify-self: center;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-        }
-        .dateInput {
-            justify-self: center;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;    
-        }
-        .guestInput {
-            justify-self: center;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;   
-        }
-    }
-}
-*/

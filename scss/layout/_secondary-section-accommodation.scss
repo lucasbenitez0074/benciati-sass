@@ -1,5 +1,5 @@
 .sectionSecondaryAcc {
-    background-color: #C6C4D2;
+    background-color: $backSec;
     padding: 1.25rem 0rem;
     .titleSectionOne {
         background-color:rgba(95, 90, 124, 0.8);
@@ -13,9 +13,7 @@
     }
     .StandardRoomsCards {
         padding: 1.25rem 0 ;
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+        @include flex(row,space-evenly,none,wrap);
         margin-top: 10px;
         gap: 6.25rem;
     }

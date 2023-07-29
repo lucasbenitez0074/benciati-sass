@@ -65,9 +65,7 @@
             width: 18.75rem;
             height: 7.8125rem;
             margin: 1.25rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex(row,center,center,none);
             h2 {
                 font-size: 2rem ;
             }

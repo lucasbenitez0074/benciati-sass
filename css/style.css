@@ -19,6 +19,7 @@ header .marcaHotel {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: none;
   margin: 0.625rem;
 }
 header .marcaHotel img {
@@ -117,8 +118,9 @@ header .marcaHotel h1 {
   align-self: flex-end;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: center;
+  align-items: flex-start;
+  flex-wrap: none;
   gap: 0.1875rem;
   background-color: rgba(30, 26, 52, 0.7);
   color: rgb(255, 255, 255);
@@ -150,8 +152,10 @@ header .marcaHotel h1 {
   width: 87vw;
   height: 8.75rem;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: none;
 }
 .mainSection .reservationWindow form {
   width: 100%;
@@ -170,27 +174,32 @@ header .marcaHotel h1 {
   justify-self: center;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: center;
+  align-items: flex-start;
+  flex-wrap: none;
 }
 .mainSection .reservationWindow form .dateInput {
   justify-self: center;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: center;
+  align-items: flex-start;
+  flex-wrap: none;
 }
 .mainSection .reservationWindow form .guestInput {
-  justify-self: center;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: center;
+  align-items: flex-start;
+  flex-wrap: none;
+  justify-self: center;
 }
 .mainSection .reservationWindow form .buttonFormInput {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: flex-end;
+  flex-wrap: none;
 }
 
 .secondarySection {
@@ -198,8 +207,10 @@ header .marcaHotel h1 {
   background-color: #1e1a34;
   height: 100vh;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: none;
 }
 .secondarySection .reservationResponsive {
   display: none;
@@ -209,6 +220,7 @@ header .marcaHotel h1 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: none;
 }
 .secondarySection .openIntro .divisoryLane {
   height: 0.125rem;
@@ -221,8 +233,10 @@ header .marcaHotel h1 {
 }
 .secondarySection .openIntro .row .col-10 .carouselIntro {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: none;
   border: 0.625rem solid #1e1a34;
 }
 .secondarySection .openIntro .row .col-10 .carouselIntro .carouselCustom {
@@ -344,7 +358,6 @@ footer {
 footer .lastLine {
   margin: 0;
   padding: 0;
-  justify-content: space-between;
 }
 footer .lastLine img {
   width: 2rem;
@@ -386,7 +399,7 @@ footer .dropup {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 2fr 1fr;
 }
-.sectionMainAcc div {
+.sectionMainAcc .mainTittle {
   width: 40rem;
   height: 12.5rem;
   background-color: rgba(30, 26, 52, 0.7);
@@ -397,14 +410,14 @@ footer .dropup {
   align-self: flex-end;
   justify-self: center;
 }
-.sectionMainAcc div h2 {
+.sectionMainAcc .mainTittle h2 {
   font-size: 4rem;
   text-align: center;
   padding: 3.5938rem 0;
 }
 
 .sectionSecondaryAcc {
-  background-color: #C6C4D2;
+  background-color: rgb(198, 196, 210);
   padding: 1.25rem 0rem;
 }
 .sectionSecondaryAcc .titleSectionOne {
@@ -420,7 +433,9 @@ footer .dropup {
 .sectionSecondaryAcc .StandardRoomsCards {
   padding: 1.25rem 0;
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
+  align-items: none;
   flex-wrap: wrap;
   margin-top: 10px;
   gap: 6.25rem;
@@ -431,11 +446,12 @@ footer .dropup {
   width: 24.8125rem;
   height: 31.5rem;
   background-color: #1e1a34;
-  border: 1px solid #C6C4D2;
+  border: 1px solid rgb(198, 196, 210);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: none;
 }
 .card img {
   margin-top: 5px;
@@ -485,8 +501,9 @@ footer .dropup {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-top: 1.5625rem;
   align-items: center;
+  flex-wrap: none;
+  margin-top: 1.5625rem;
   width: 24.8125rem;
   height: 31.5rem;
   background-color: rgb(198, 196, 210);
@@ -537,78 +554,6 @@ footer .dropup {
   display: none;
 }
 
-/*
-.reservationWindow {
-    justify-self: center;
-    align-self: center;
-    grid-area: cuad3;
-    background-color:rgba(198, 196, 210, 0.4);
-    color: rgba(0,0,0, 1);
-    backdrop-filter: blur(4px);
-    width: 68.75rem;
-    height: 8.75rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    form {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 20% 40% 20% 20%;
-        legend {
-            font-size: 1.2rem;
-            font-family:$titulo; 
-        }
-        input {
-            padding: .3125rem;
-            height: 2.8125rem;
-        }
-        .buttonFormInput {
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            .buttonForm{
-                width: 8rem;
-                background-color: rgba(198, 196, 210, 1);
-                box-shadow: 0px 0px 4px black;
-                font-size: .9375rem;
-                font-weight: bold;
-                border: none;
-                border-radius: .1875rem;
-                cursor: pointer;
-                transition: 1s;
-                &:hover {
-                    .buttonForm:hover {
-                        background-color: #5F5A7C;
-                        color: white;
-                        box-shadow: 0 0 10px black;
-                    }
-                }
-            }
-        }
-        .destinationInput {
-            justify-self: center;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-        }
-        .dateInput {
-            justify-self: center;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;    
-        }
-        .guestInput {
-            justify-self: center;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;   
-        }
-    }
-}
-*/
 .loungesAndSuites {
   padding: 1.25rem 0rem;
 }
@@ -626,7 +571,9 @@ footer .dropup {
 .loungesAndSuites .loungesAndSuitesCards {
   padding: 1.25rem 1.25rem;
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
+  align-items: none;
   flex-wrap: wrap;
   gap: 6.25rem;
 }
@@ -641,15 +588,15 @@ main .mainServicesSection {
   grid-template-rows: 1fr 2fr 1fr;
 }
 main .mainServicesSection div {
-  grid-column: 1/2;
-  grid-row: 2/3;
-  align-self: flex-end;
-  justify-self: center;
-  width: 36rem;
+  width: 40rem;
   height: 12.5rem;
   background-color: rgba(30, 26, 52, 0.7);
   color: rgb(255, 255, 255);
   backdrop-filter: blur(4px);
+  grid-column: 1/2;
+  grid-row: 2/3;
+  align-self: flex-end;
+  justify-self: center;
 }
 main .mainServicesSection div h2 {
   font-family: "Playfair Display", serif;
@@ -660,7 +607,9 @@ main .mainServicesSection div h2 {
 main .servicesCards {
   background-color: #1e1a34;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
+  align-items: none;
   flex-wrap: wrap;
   gap: 6.25rem;
   margin: 6.25rem;
@@ -675,7 +624,9 @@ main .servicesCards .serviceCard {
   margin-top: 1.875rem;
   display: flex;
   flex-direction: column;
+  justify-content: none;
   align-items: center;
+  flex-wrap: none;
   transition: 1s;
 }
 main .servicesCards .serviceCard .animation {
@@ -710,7 +661,10 @@ main .servicesCards .serviceCard:hover img {
 }
 main .servicesCards .serviceCard:hover .animation {
   display: flex;
+  flex-direction: row;
+  justify-content: none;
   align-items: center;
+  flex-wrap: none;
   color: white;
   transform: scale(1.2);
 }
@@ -725,18 +679,21 @@ main .servicesCards .serviceCard:hover .animation {
   grid-template-rows: 1fr 2fr 1fr;
 }
 .eventsSection div {
-  grid-column: 1/2;
-  grid-row: 2/3;
-  align-self: flex-end;
-  justify-self: center;
-  width: 30rem;
+  width: 40rem;
+  width: 40rem;
   height: 12.5rem;
   background-color: rgba(30, 26, 52, 0.7);
   color: rgb(255, 255, 255);
   backdrop-filter: blur(4px);
+  grid-column: 1/2;
+  grid-row: 2/3;
+  align-self: flex-end;
+  justify-self: center;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  flex-wrap: none;
 }
 .eventsSection div h2 {
   font-size: 4rem;
@@ -783,8 +740,10 @@ main .servicesCards .serviceCard:hover .animation {
 }
 .sectionContainer .socialEvents .socialEventImgCont {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: none;
   padding: 1.5625rem 0;
 }
 .sectionContainer .socialEvents .socialEventImgCont img {
@@ -796,7 +755,10 @@ main .servicesCards .serviceCard:hover .animation {
 }
 .sectionContainer .gallery {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
+  align-items: none;
+  flex-wrap: none;
 }
 .sectionContainer .gallery img {
   width: 25.625rem;
@@ -820,8 +782,10 @@ main .servicesCards .serviceCard:hover .animation {
 }
 .sectionContainer .conferenceRooms .conferenceRoomsGrid .conferenceRooomsImgCont {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: none;
   padding: 1.5625rem 0;
 }
 .sectionContainer .conferenceRooms .conferenceRoomsGrid .conferenceRooomsImgCont img {
@@ -885,10 +849,13 @@ main .servicesCards .serviceCard:hover .animation {
 }
 .contenedor .frequentQuestions .questionsContainer .question {
   display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+  flex-wrap: none;
   width: 80%;
   height: 6.875rem;
   background-color: rgba(222, 217, 253, 0.5);
-  align-items: center;
   margin-top: 0.0625rem;
 }
 .contenedor .frequentQuestions .questionsContainer .question:last-child {
@@ -905,6 +872,7 @@ main .servicesCards .serviceCard:hover .animation {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
+  flex-wrap: none;
   color: white;
   margin: 2.5rem 0;
 }
@@ -938,8 +906,11 @@ main .servicesCards .serviceCard:hover .animation {
   grid-area: name;
   align-self: flex-start;
   display: flex;
-  gap: 3.75rem;
+  flex-direction: row;
   justify-content: flex-start;
+  align-items: none;
+  flex-wrap: none;
+  gap: 3.75rem;
 }
 .contenedor .contactForm form fieldset .name input {
   height: 3.125rem;
@@ -976,8 +947,10 @@ main .servicesCards .serviceCard:hover .animation {
 }
 .contenedor .contactForm form fieldset .bloque .optionYes {
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: none;
   gap: 0.625rem;
 }
 .contenedor .contactForm form fieldset .bloque .optionYes input {
@@ -1005,7 +978,7 @@ main .servicesCards .serviceCard:hover .animation {
   transition: 1s;
 }
 .buttonSend:hover {
-  background-color: #353150;
+  background-color: #5F5A7C;
   color: white;
   box-shadow: 0 0 0.625rem black;
 }
@@ -1131,6 +1104,7 @@ main .servicesCards .serviceCard:hover .animation {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: none;
     background-color: #1e1a34;
     width: 50%;
     height: 82vh;
@@ -1165,14 +1139,13 @@ main .servicesCards .serviceCard:hover .animation {
   }
   .mainSection .reservationWindow form .dateInput {
     grid-area: date;
-    align-items: flex-start;
-    justify-content: center;
   }
   .mainSection .reservationWindow form .dateInput .checkOutIn {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
   }
   .mainSection .reservationWindow form .dateInput .checkOutIn input {
     width: 9.375rem;
@@ -1201,8 +1174,10 @@ main .servicesCards .serviceCard:hover .animation {
     width: 30rem;
     height: 9rem;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    flex-wrap: none;
   }
   main .mainServicesSection div h2 {
     font-size: 3rem;
@@ -1301,8 +1276,9 @@ main .servicesCards .serviceCard:hover .animation {
     grid-template-rows: 1/2;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: none;
     justify-self: flex-end;
     align-self: center;
     margin-right: 0.625rem;
@@ -1355,8 +1331,9 @@ main .servicesCards .serviceCard:hover .animation {
     margin-left: 0.625rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: none;
   }
   .secondarySection .reservationResponsive .guestInputResponsive input {
     width: 15.625rem;
@@ -1431,7 +1408,9 @@ main .servicesCards .serviceCard:hover .animation {
     padding: 0.9375rem;
     display: flex;
     flex-direction: column;
+    justify-content: none;
     align-items: center;
+    flex-wrap: wrap;
     grid-column: 2/3;
     background-color: rgba(198, 196, 210, 0.4);
     color: rgb(0, 0, 0);
@@ -1479,8 +1458,10 @@ main .servicesCards .serviceCard:hover .animation {
   .sectionSecondaryAcc .StandardRoomsCards .cardResponsive {
     margin-top: 5rem;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: none;
     background-color: #1e1a34;
     width: 100%;
     height: 18.75rem;
@@ -1490,6 +1471,7 @@ main .servicesCards .serviceCard:hover .animation {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-end;
+    flex-wrap: none;
   }
   .sectionSecondaryAcc .StandardRoomsCards .cardResponsive .infoImpar h4 {
     font-size: 1.2rem;
@@ -1536,8 +1518,10 @@ main .servicesCards .serviceCard:hover .animation {
   .loungesAndSuites .loungesAndSuitesCards .cardTwoResponsive {
     margin-top: 5rem;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: none;
     background-color: #C6C4D2;
     width: 100%;
     height: 18.75rem;
@@ -1547,6 +1531,7 @@ main .servicesCards .serviceCard:hover .animation {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-end;
+    flex-wrap: none;
   }
   .loungesAndSuites .loungesAndSuitesCards .cardTwoResponsive .infoPar .h4 {
     font-size: 1.2rem;
@@ -1660,6 +1645,7 @@ main .servicesCards .serviceCard:hover .animation {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: none;
     margin: 0;
   }
   .contenedor .frequentQuestions .questionsContainer {
@@ -1667,7 +1653,9 @@ main .servicesCards .serviceCard:hover .animation {
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: none;
     align-items: center;
+    flex-wrap: none;
   }
 }
 @media (max-width: 575px) {
@@ -1705,8 +1693,10 @@ main .servicesCards .serviceCard:hover .animation {
     height: 7.8125rem;
     margin: 1.25rem;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    flex-wrap: none;
   }
   .sectionMainAcc div h2 {
     font-size: 2rem;
@@ -1773,6 +1763,7 @@ main .servicesCards .serviceCard:hover .animation {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: none;
     grid-row: 2/3;
     background-image: none;
     background-color: rgb(198, 196, 210);
@@ -1815,6 +1806,7 @@ main .servicesCards .serviceCard:hover .animation {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: none;
     grid-row: 2/3;
     background-image: none;
     background-color: rgb(198, 196, 210);

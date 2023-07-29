@@ -2,17 +2,12 @@
     margin-top: 6.25rem;
     background-color: $backMain;
     height: 100vh; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(row,center,center,none);
     .reservationResponsive {
         display: none;
     }
     .openIntro {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        @include flex(column,space-between,center,none);
         .divisoryLane {
             height: .125rem;
             width: 31.25rem;
@@ -23,9 +18,7 @@
             .col-10 {
                 padding-right: 0;
                 .carouselIntro {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @include flex(row,center,center,none);
                     border: .625rem solid $backMain;
                     .carouselCustom {
                         width: 90%;

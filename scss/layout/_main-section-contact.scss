@@ -21,11 +21,10 @@
         }
         .questionsContainer{
             .question {
-                display: flex;
+                @include flex(row,none,center,none);
                 width: 80%;
                 height: 6.875rem;
                 background-color:rgba(222, 217, 253, 0.5);
-                align-items: center;
                 margin-top: .0625rem;
                 &:last-child {
                     margin-top: .125rem;
@@ -42,10 +41,7 @@
     }
     .contactForm {
         justify-self: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: flex-start;
+        @include flex(column,space-around,flex-start,none);
         color: white;
         margin: 2.5rem 0;
         .subrayado {
@@ -82,9 +78,8 @@
                     width: 80%;
                     grid-area: name;
                     align-self: flex-start;
-                    display: flex;
+                    @include flex(row,flex-start,none,none);
                     gap: 3.75rem;
-                    justify-content: flex-start;
                     input {
                         height: 3.125rem;
                         width: 80%;
@@ -123,9 +118,7 @@
                         }
                     }
                     .optionYes {
-                        display: flex;
-                        justify-content: flex-start;
-                        align-items: center;
+                        @include flex(row,flex-start,center,none);
                         gap: .625rem;
                         input {
                             width: 1.5rem;
@@ -151,12 +144,12 @@
 .buttonSend {
     width: 10.9375rem;
     height: 3.125rem;
-    font-family: 'Playfair Display', serif ;
+    font-family: $titulo;
     font-size: 1.25rem;
     font-weight: bold;
     transition: 1s;
     &:hover {
-        background-color: #353150;
+        background-color: $backThird;
         color: white;
         box-shadow: 0 0 .625rem black; 
     }

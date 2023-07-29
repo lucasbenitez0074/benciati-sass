@@ -8,15 +8,15 @@ main {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 2fr 1fr;
         div {
-            grid-column: 1/2;
-            grid-row: 2/3;
-            align-self: flex-end;
-            justify-self: center;
-            width: 36rem;
-            height: 12.5rem;
-            background-color:rgba(30, 26, 52, 0.7);
-            color: rgba(255, 255, 255, 1);
-            backdrop-filter: blur(4px);
+        width: 40rem;
+        height: 12.5rem;
+        background-color:rgba(30, 26, 52, 0.7);
+        color: rgba(255, 255, 255, 1);
+        backdrop-filter: blur(4px);
+        grid-column: 1/2;
+        grid-row: 2/3;
+        align-self: flex-end;
+        justify-self: center;
             h2 {
                 font-family: $titulo;
                 font-size: 4rem;
@@ -26,10 +26,8 @@ main {
         }
     }
     .servicesCards {
-        background-color: #1e1a34;
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        background-color: $backMain;
+        @include flex(row,space-around,none,wrap);
         gap: 6.25rem;
         margin: 6.25rem;    
         .serviceCard {
@@ -40,9 +38,7 @@ main {
             justify-self: center;
             align-self: center;
             margin-top: 1.875rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex(column,none,center,none);
             transition: 1s;
             .animation {
                 display: none;
@@ -78,8 +74,7 @@ main {
 
             }
             &:hover .animation{
-                display: flex;
-                align-items: center;
+                @include flex(row,none,center,none);
                 color: white;
                 transform: scale(1.2);
             }

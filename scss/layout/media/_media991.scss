@@ -5,10 +5,7 @@
                 height: 6.875rem;
                 .colapsoNav {
                     .barraNavegacion {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-around;
-                        align-items: center;
+                        @include flex(column,space-around,center,none);
                         background-color: $backMain;
                         width: 50%;
                         height: 82vh;
@@ -52,13 +49,8 @@
                 }
                 .dateInput {
                     grid-area: date;
-                    align-items: flex-start;
-                    justify-content: center;
                     .checkOutIn {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
+                        @include flex(column,center,center,none);
                         input {
                             width: 9.375rem;
                         }
@@ -99,9 +91,7 @@
             div {
                 width: 30rem;
                 height: 9rem;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                @include flex(row,center,center,none);
                 h2 {
                     font-size: 3rem;
                 }

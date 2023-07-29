@@ -1,5 +1,5 @@
 .mainSection {
-    background-color: #1e1a34;
+    background-color: $backMain;
     background-image: url("../assets/img/hotel.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -16,10 +16,7 @@
         grid-area: cuad1;
         justify-self: center;
         align-self: flex-end;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
+        @include flex(column,center,flex-start,none);
         gap: .1875rem;
         background-color:rgba(30, 26, 52, 0.7);
         color: rgba(255, 255, 255, 1);
@@ -50,9 +47,7 @@
         backdrop-filter: blur(4px);
         width: 87vw;
         height: 8.75rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(row,center,center,none);
         form {
             width: 100%;
             display: grid;
@@ -67,30 +62,18 @@
             }
             .destinationInput {
                 justify-self: center;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: center;
+                @include flex(column,center,flex-start,none);
             }
             .dateInput {
                 justify-self: center;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: center; 
+                @include flex(column,center,flex-start,none); 
             }
             .guestInput {
+                @include flex(column,center,flex-start,none);
                 justify-self: center;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: center; 
             }
             .buttonFormInput {
-                display: flex;
-                justify-content: center;
-                align-items: flex-end;
-                
+                @include flex(row,center,flex-end,none);                
             }
         }
     }

@@ -3,10 +3,7 @@ header{
     width: 100%;
     z-index: 9999;
     .marcaHotel{ 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex(column,center,center,none);
         margin: .625rem;
         img {
             width: 3.75rem;

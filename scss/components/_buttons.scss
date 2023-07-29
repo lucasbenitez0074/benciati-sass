@@ -1,7 +1,7 @@
 .btnBookNow {
     color: black;
     width: 6.25rem;
-    background-color: rgba(198, 196, 210, 1);
+    background-color: $backSec;
     padding: .9375rem;
     box-shadow: 0px 0px 4px black;
     font-size: .75rem;
@@ -18,7 +18,7 @@
 }
 .buttonForm {
     width: 8rem;
-    background-color: rgba(198, 196, 210, 1);
+    background-color:$backSec;
     box-shadow: 0px 0px 4px black;
     font-size: .9375rem;
     font-weight: bold;

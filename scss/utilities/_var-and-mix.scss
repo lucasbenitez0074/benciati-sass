@@ -5,17 +5,6 @@ $backNav : linear-gradient(to bottom, #1e1a43, rgb(153, 140, 168) );
 $titulo : 'Playfair Display', serif ;
 $parrafo : 'Antic', sans-serif;
 
-@mixin mainTittle {
-    font-family: $titulo;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    background-color:rgba(30, 26, 52, 0.7);
-    color: rgba(255, 255, 255, 1);
-    backdrop-filter: blur(4px);
-    padding: .3125rem 0 .1875rem .3125rem;
-}
 
 @mixin flex($direction,$justify,$align,$wrap) {
     display: flex;
@@ -23,12 +12,4 @@ $parrafo : 'Antic', sans-serif;
     justify-content: $justify;
     align-items: $align;
     flex-wrap: $wrap;
-}
-
-@mixin grid($col,$row,$justify,$align) {  
-    display: grid;
-    grid-template-columns: $col;
-    grid-template-rows: $row;
-    justify-content: $justify;
-    align-content: $align;
 }

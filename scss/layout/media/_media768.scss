@@ -38,10 +38,7 @@
                 .destinationInputResponsive {
                     grid-area: dr1;
                     grid-template-rows: 1/2;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: space-between;
+                    @include flex(column,space-between,center,none);
                     justify-self: flex-end;
                     align-self: center;
                     margin-right: .625rem;
@@ -95,10 +92,7 @@
                 justify-self: flex-start;
                 align-self: center;
                 margin-left: .625rem;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
+                @include flex(column,space-around,center,none);
                 input {
                     width: 15.625rem;
                     height: 3.125rem;
@@ -172,9 +166,7 @@
                 justify-content: flex-end;
                 .designAndComfortInfoResponsive {
                     padding: .9375rem;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
+                    @include flex(column,none,center,wrap);
                     grid-column: 2/3;
                     background-color:rgba(198, 196, 210, 0.4);
                     color: rgba(0,0,0, 1);
@@ -226,17 +218,12 @@
             }
             .cardResponsive {
                 margin-top: 5rem;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                background-color: #1e1a34;
+                @include flex(row,space-around,center,none);
+                background-color: $backMain;
                 width: 100%;
                 height: 18.75rem;
                 .infoImpar {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
-                    align-items: flex-end;
+                    @include flex(column,space-around,flex-end,none);
                     h4 {
                         font-size: 1.20rem;
                         color: white;
@@ -288,17 +275,12 @@
             }
             .cardTwoResponsive {
                 margin-top: 5rem;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
+                @include flex(row,space-around,center,none);
                 background-color: #C6C4D2;
                 width: 100%;
                 height: 18.75rem;
                 .infoPar {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
-                    align-items: flex-end;
+                    @include flex(column,space-around,flex-end,none);
                     .h4 {
                         font-size: 1.20rem;
                         font-weight: bolder;
@@ -423,17 +405,12 @@
         .frequentQuestions {
             grid-row:2/3;
             justify-self: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
+            @include flex(column,space-around,center,none);
             margin: 0;
             .questionsContainer {
                 margin: 1.25rem 1.25rem;
                 width: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                @include flex(column,none,center,none);
             }
         }
     
