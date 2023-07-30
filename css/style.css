@@ -1758,6 +1758,10 @@ main .servicesCards .serviceCard:hover .animation {
     height: 1.5rem;
   }
   /* services */
+  /*  events */
+  .eventsSection {
+    background-position: center;
+  }
 }
 @media (max-width: 480px) {
   .secondarySection .reservationResponsive form .destinationInputResponsive input {
@@ -1928,6 +1932,9 @@ main .servicesCards .serviceCard:hover .animation {
     font-size: 2.5rem;
   }
   /* events */
+  .eventsSection {
+    background-position: center;
+  }
   .eventsSection div {
     width: 17rem;
   }
@@ -2060,6 +2067,9 @@ main .servicesCards .serviceCard:hover .animation {
     font-size: 0.75rem;
   }
   /* events */
+  .eventsSection {
+    background-position: center;
+  }
   .sectionContainer .socialEvents .socialEventsGrid .containSocialInfo {
     padding-right: 0;
   }
