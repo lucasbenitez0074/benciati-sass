@@ -81,6 +81,23 @@
                 display: none;
             }
         }
+
+    }
+    .thirdSection {
+        .theHotel {
+            .theHotelInfo {
+                p {
+                    font-size: 1.125rem;
+                }
+            }
+        }
+        .designAndComfort {
+            .designAndComfortInfo {
+                p {
+                    font-size: 1.125rem;
+                }
+            }
+        }
     }
     /* accommodations */
     /* no hay estilo agregado */
@@ -159,7 +176,15 @@
         }
     }
     .contenedor {
+        .frequentQuestions {
+            h3 {
+                font-size: 1.75rem;
+            }
+        }
         .contactForm {
+            h3 {
+                font-size: 1.75rem;
+            }
             form {
                 fieldset {
                     .name {

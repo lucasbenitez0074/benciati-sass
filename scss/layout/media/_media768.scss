@@ -147,7 +147,7 @@
                     }
                     p {
                         font-family: $parrafo;
-                        font-size: 1rem;
+                        font-size: .9375rem;
                         font-weight: bolder;
                         margin: .3125rem;
                     }
@@ -165,7 +165,7 @@
                 grid-template-columns: 2fr 1.5fr;
                 justify-content: flex-end;
                 .designAndComfortInfoResponsive {
-                    padding: .9375rem;
+                    padding: .625rem;
                     @include flex(column,none,center,wrap);
                     grid-column: 2/3;
                     background-color:rgba(198, 196, 210, 0.4);
@@ -183,7 +183,7 @@
                         font-size: 1.25rem;
                     }
                     p {
-                        font-size: 1rem;
+                        font-size: .9375rem;
                         color: black;
                         font-weight: bolder;
                         font-family: $parrafo;
@@ -201,11 +201,15 @@
     }
     /* accommodations */
     .sectionMainAcc {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        div {
-            grid-row: 2/3;
+        .mainTittle {
             grid-column: 2/3;
+            grid-row: 3/4;
+            width: 28rem;
+            height: 9rem;
+            align-self: center;
+            h2 {
+                font-size: 2.5rem;
+            }
         }
     }
     .sectionSecondaryAcc{
@@ -325,7 +329,7 @@
     /* services */
     main {
         .mainServicesSection {
-            div {
+            .mainTittleServ {
                 grid-column: 2/3;
                 grid-row: 3/4;
                 width: 28rem;

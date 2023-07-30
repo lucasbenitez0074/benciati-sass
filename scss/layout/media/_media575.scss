@@ -36,6 +36,7 @@
         .theHotel{ 
             .pool1 {
                 .theHotelInfoResponsive {
+                    padding: .3125rem;
                     h3 {
                         font-size: 1.25rem;
                         text-align: center;
@@ -49,6 +50,7 @@
         .designAndComfort {
             .airVision{
                 .designAndComfortInfoResponsive {
+                    padding: .3125rem;
                     h3 {
                         font-size: 1rem;
                     }
@@ -61,7 +63,7 @@
     }
     /* accommodations */
     .sectionMainAcc {
-        div {
+        .mainTittle {
             width: 18.75rem;
             height: 7.8125rem;
             margin: 1.25rem;
@@ -120,5 +122,6 @@
             }
         }
     }
-    
+    /* services */
+
 }

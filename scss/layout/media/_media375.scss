@@ -57,10 +57,19 @@
             }
         }
     }
+    /* accommodations */
+    .sectionMainAcc {
+        .mainTittle {
+            width: 18rem;
+            h2 {
+                font-size: 1.75rem;
+            }
+        }
+    }
     /* services */
     main {
         .mainServicesSection {
-            div {
+            .mainTittleServ {
                 width: 18rem;
                 
             }

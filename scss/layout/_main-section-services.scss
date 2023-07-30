@@ -1,13 +1,13 @@
 main {
     .mainServicesSection {
-        background-image: url(../assets/img/resto-main.jpg);
+        background-image: url(https://i.postimg.cc/jqfG1Y4x/resto-main.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 2fr 1fr;
-        div {
+        .mainTittleServ {
         width: 40rem;
         height: 12.5rem;
         background-color:rgba(30, 26, 52, 0.7);

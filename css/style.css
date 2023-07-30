@@ -101,7 +101,7 @@ header .marcaHotel h1 {
 
 .mainSection {
   background-color: #1e1a34;
-  background-image: url("../assets/img/hotel.jpg");
+  background-image: url("https://i.postimg.cc/qvr0wvfH/hotel.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: 7.5rem;
@@ -296,13 +296,13 @@ header .marcaHotel h1 {
 }
 .thirdSection .theHotel .theHotelInfo p {
   margin-top: 3.125rem;
-  font-size: 1.625rem;
+  font-size: 1.5rem;
   color: white;
   font-family: "Antic", sans-serif;
 }
 .thirdSection .theHotel .pool1 {
   height: 100vh;
-  background-image: url(../assets/img/hotel-pool1.jpeg);
+  background-image: url(https://i.postimg.cc/90T5PvJf/hotel-pool1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -320,7 +320,7 @@ header .marcaHotel h1 {
 }
 .thirdSection .designAndComfort .airVision {
   height: 100vh;
-  background-image: url(../assets/img/hotelairvision.jpg);
+  background-image: url(https://i.postimg.cc/g0SWGyxG/hotelairvision.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -345,7 +345,7 @@ header .marcaHotel h1 {
 .thirdSection .designAndComfort .designAndComfortInfo p {
   margin-left: 0.125rem;
   margin-top: 3.125rem;
-  font-size: 1.625rem;
+  font-size: 1.5rem;
   color: white;
 }
 
@@ -390,7 +390,7 @@ footer .dropup {
 }
 
 .sectionMainAcc {
-  background-image: url(../assets/img/hotelroommain.jpg);
+  background-image: url(https://i.postimg.cc/XNyb0C40/hotelroommain.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -579,7 +579,7 @@ footer .dropup {
 }
 
 main .mainServicesSection {
-  background-image: url(../assets/img/resto-main.jpg);
+  background-image: url(https://i.postimg.cc/jqfG1Y4x/resto-main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -587,7 +587,7 @@ main .mainServicesSection {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 2fr 1fr;
 }
-main .mainServicesSection div {
+main .mainServicesSection .mainTittleServ {
   width: 40rem;
   height: 12.5rem;
   background-color: rgba(30, 26, 52, 0.7);
@@ -598,7 +598,7 @@ main .mainServicesSection div {
   align-self: flex-end;
   justify-self: center;
 }
-main .mainServicesSection div h2 {
+main .mainServicesSection .mainTittleServ h2 {
   font-family: "Playfair Display", serif;
   font-size: 4rem;
   text-align: center;
@@ -670,7 +670,7 @@ main .servicesCards .serviceCard:hover .animation {
 }
 
 .eventsSection {
-  background-image: url(../assets/img/eventa-main.jpg);
+  background-image: url(https://i.postimg.cc/sD7s5ZNJ/eventa-main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -902,7 +902,7 @@ main .servicesCards .serviceCard:hover .animation {
   grid-template-areas: "name name" "email email" "number number" "textArea textArea" "send send";
 }
 .contenedor .contactForm form fieldset .name {
-  width: 80%;
+  width: 100%;
   grid-area: name;
   align-self: flex-start;
   display: flex;
@@ -912,21 +912,26 @@ main .servicesCards .serviceCard:hover .animation {
   flex-wrap: none;
   gap: 3.75rem;
 }
-.contenedor .contactForm form fieldset .name input {
+.contenedor .contactForm form fieldset .name .inputName input {
   height: 3.125rem;
-  width: 80%;
+  width: 100%;
+}
+.contenedor .contactForm form fieldset .name .inputLastname input {
+  height: 3.125rem;
+  width: 100%;
 }
 .contenedor .contactForm form fieldset .email {
   grid-area: email;
 }
 .contenedor .contactForm form fieldset .email input {
-  width: 80%;
+  width: 100%;
   height: 3.125rem;
 }
 .contenedor .contactForm form fieldset .number {
   grid-area: number;
 }
 .contenedor .contactForm form fieldset .number input {
+  width: 100%;
   height: 3.125rem;
 }
 .contenedor .contactForm form fieldset .bloque {
@@ -938,7 +943,7 @@ main .servicesCards .serviceCard:hover .animation {
 .contenedor .contactForm form fieldset .bloque .textArea textarea {
   background-color: #C6C4D2;
   height: 19.375rem;
-  width: 80%;
+  width: 100%;
 }
 .contenedor .contactForm form fieldset .bloque .textArea p {
   font-family: "Antic", sans-serif;
@@ -994,18 +999,17 @@ main .servicesCards .serviceCard:hover .animation {
   .mainSection .mainSlogan h2 {
     font-size: 3rem;
   }
-  /* accommodations */
   .thirdSection .theHotel .theHotelInfo h3 {
     font-size: 1.25rem;
   }
   .thirdSection .theHotel .theHotelInfo p {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
   }
   .thirdSection .designAndComfort .designAndComfortInfo h3 {
     font-size: 1.25rem;
   }
   .thirdSection .designAndComfort .designAndComfortInfo p {
-    font-size: 1.4rem;
+    font-size: 1.3125rem;
   }
   /* events */
   .eventsSection div {
@@ -1167,6 +1171,12 @@ main .servicesCards .serviceCard:hover .animation {
   .secondarySection .openIntro .divisoryLane {
     display: none;
   }
+  .thirdSection .theHotel .theHotelInfo p {
+    font-size: 1.125rem;
+  }
+  .thirdSection .designAndComfort .designAndComfortInfo p {
+    font-size: 1.125rem;
+  }
   /* accommodations */
   /* no hay estilo agregado */
   /* services */
@@ -1229,6 +1239,12 @@ main .servicesCards .serviceCard:hover .animation {
   }
   .sectionContainer .conferenceRooms .conferenceRoomsGrid .containConferenceInfo .verMasP {
     justify-self: center;
+  }
+  .contenedor .frequentQuestions h3 {
+    font-size: 1.75rem;
+  }
+  .contenedor .contactForm h3 {
+    font-size: 1.75rem;
   }
   .contenedor .contactForm form fieldset .name {
     gap: 1.25rem;
@@ -1388,7 +1404,7 @@ main .servicesCards .serviceCard:hover .animation {
   }
   .thirdSection .theHotel .pool1 .theHotelInfoResponsive p {
     font-family: "Antic", sans-serif;
-    font-size: 1rem;
+    font-size: 0.9375rem;
     font-weight: bolder;
     margin: 0.3125rem;
   }
@@ -1405,7 +1421,7 @@ main .servicesCards .serviceCard:hover .animation {
     justify-content: flex-end;
   }
   .thirdSection .designAndComfort .airVision .designAndComfortInfoResponsive {
-    padding: 0.9375rem;
+    padding: 0.625rem;
     display: flex;
     flex-direction: column;
     justify-content: none;
@@ -1428,7 +1444,7 @@ main .servicesCards .serviceCard:hover .animation {
     font-size: 1.25rem;
   }
   .thirdSection .designAndComfort .airVision .designAndComfortInfoResponsive p {
-    font-size: 1rem;
+    font-size: 0.9375rem;
     color: black;
     font-weight: bolder;
     font-family: "Antic", sans-serif;
@@ -1441,13 +1457,15 @@ main .servicesCards .serviceCard:hover .animation {
     height: 23.4375rem;
   }
   /* accommodations */
-  .sectionMainAcc {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-  .sectionMainAcc div {
-    grid-row: 2/3;
+  .sectionMainAcc .mainTittle {
     grid-column: 2/3;
+    grid-row: 3/4;
+    width: 28rem;
+    height: 9rem;
+    align-self: center;
+  }
+  .sectionMainAcc .mainTittle h2 {
+    font-size: 2.5rem;
   }
   .sectionSecondaryAcc .StandardRoomsCards .tittleSectionOne {
     padding: 1.25rem;
@@ -1571,7 +1589,7 @@ main .servicesCards .serviceCard:hover .animation {
     height: 14.125rem;
   }
   /* services */
-  main .mainServicesSection div {
+  main .mainServicesSection .mainTittleServ {
     grid-column: 2/3;
     grid-row: 3/4;
     width: 28rem;
@@ -1674,12 +1692,18 @@ main .servicesCards .serviceCard:hover .animation {
   .secondarySection .reservationResponsive form .guestInputResponsive input {
     width: 12.5rem;
   }
+  .thirdSection .theHotel .pool1 .theHotelInfoResponsive {
+    padding: 0.3125rem;
+  }
   .thirdSection .theHotel .pool1 .theHotelInfoResponsive h3 {
     font-size: 1.25rem;
     text-align: center;
   }
   .thirdSection .theHotel .pool1 .theHotelInfoResponsive p {
     font-size: 0.9375rem;
+  }
+  .thirdSection .designAndComfort .airVision .designAndComfortInfoResponsive {
+    padding: 0.3125rem;
   }
   .thirdSection .designAndComfort .airVision .designAndComfortInfoResponsive h3 {
     font-size: 1rem;
@@ -1688,7 +1712,7 @@ main .servicesCards .serviceCard:hover .animation {
     font-size: 0.9375rem;
   }
   /* accommodations */
-  .sectionMainAcc div {
+  .sectionMainAcc .mainTittle {
     width: 18.75rem;
     height: 7.8125rem;
     margin: 1.25rem;
@@ -1698,7 +1722,7 @@ main .servicesCards .serviceCard:hover .animation {
     align-items: center;
     flex-wrap: none;
   }
-  .sectionMainAcc div h2 {
+  .sectionMainAcc .mainTittle h2 {
     font-size: 2rem;
   }
   .sectionSecondaryAcc .StandardRoomsCards .cardResponsive .infoImpar img {
@@ -1733,6 +1757,7 @@ main .servicesCards .serviceCard:hover .animation {
     width: 1.5rem;
     height: 1.5rem;
   }
+  /* services */
 }
 @media (max-width: 480px) {
   .secondarySection .reservationResponsive form .destinationInputResponsive input {
@@ -1854,6 +1879,12 @@ main .servicesCards .serviceCard:hover .animation {
     display: none;
   }
   /* accommodations */
+  .sectionMainAcc .mainTittle {
+    width: 20rem;
+  }
+  .sectionMainAcc .mainTittle h2 {
+    font-size: 2.25rem;
+  }
   .sectionSecondaryAcc .titleSectionOne h3 {
     font-size: 1.8rem;
   }
@@ -1889,11 +1920,11 @@ main .servicesCards .serviceCard:hover .animation {
     height: 1.875rem;
   }
   /* services */
-  main .mainServicesSection div {
+  main .mainServicesSection .mainTittleServ {
     width: 20rem;
     height: 7.5rem;
   }
-  main .mainServicesSection div h2 {
+  main .mainServicesSection .mainTittleServ h2 {
     font-size: 2.5rem;
   }
   /* events */
@@ -1933,44 +1964,32 @@ main .servicesCards .serviceCard:hover .animation {
     grid-template-rows: 2fr 1fr 1fr 5fr 1fr;
   }
   .contenedor .contactForm form fieldset .name {
-    grid-row: 1/2;
-    width: 100%;
     display: grid;
-    grid-row: 1fr 1fr;
-  }
-  .contenedor .contactForm form fieldset .name .inputName {
-    grid-row: 1/2;
+    grid-template-rows: 1fr 1fr;
   }
   .contenedor .contactForm form fieldset .name .inputName input {
     width: 100%;
   }
-  .contenedor .contactForm form fieldset .name .inputLastName {
-    grid-row: 2/3;
-  }
-  .contenedor .contactForm form fieldset .name .inputLastName input {
+  .contenedor .contactForm form fieldset .name .inputLastname input {
     width: 100%;
   }
   .contenedor .contactForm form fieldset .email {
     margin-top: 1.25rem;
-    grid-row: 2/3;
   }
   .contenedor .contactForm form fieldset .email input {
     width: 100%;
   }
   .contenedor .contactForm form fieldset .number {
     margin-top: 1.25rem;
-    grid-row: 3/4;
   }
   .contenedor .contactForm form fieldset .number input {
     width: 100%;
   }
   .contenedor .contactForm form fieldset .bloque {
     margin-top: 1.25rem;
-    grid-row: 4/5;
   }
   .contenedor .contactForm form fieldset .boton {
     margin-top: 1.25rem;
-    grid-row: 5/6;
   }
 }
 @media (max-width: 375px) {
@@ -2014,8 +2033,15 @@ main .servicesCards .serviceCard:hover .animation {
   .thirdSection .theHotel .theHotelInfo p {
     font-size: 0.7813rem;
   }
+  /* accommodations */
+  .sectionMainAcc .mainTittle {
+    width: 18rem;
+  }
+  .sectionMainAcc .mainTittle h2 {
+    font-size: 1.75rem;
+  }
   /* services */
-  main .mainServicesSection div {
+  main .mainServicesSection .mainTittleServ {
     width: 18rem;
   }
   main .servicesCards .serviceCard {

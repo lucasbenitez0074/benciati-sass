@@ -131,6 +131,14 @@
 
     }
     /* accommodations */
+    .sectionMainAcc {
+        .mainTittle {
+            width: 20rem;
+            h2{ 
+                font-size: 2.25rem;
+            }
+        }
+    }
     .sectionSecondaryAcc {
         .titleSectionOne {
             h3 {
@@ -189,7 +197,7 @@
     /* services */
     main {
         .mainServicesSection {
-            div {
+            .mainTittleServ {
                 width: 20rem;
                 height: 7.5rem;
                 h2 {
@@ -232,73 +240,66 @@
     }
     /* contact */
     .contenedor {
-        .frequentQuestions {
-            margin-top: 9.375rem;
-            h3 {
-                font-size: 1.625rem;
-            }
-            .questionsContainer {
-                .question {
-                    ul {
-                        li{
-                            font-size: .875rem;
-                        }
-                    }
-                }
-            }
+    .frequentQuestions {
+        margin-top: 9.375rem;
+        h3 {
+            font-size: 1.625rem;
         }
-        .contactForm {
-            margin-bottom: 3.125rem;
-            h3 {
-                font-size: 1.625rem;
-            }
-            form {
-                fieldset {
-                    grid-template-columns: 1fr;
-                    grid-template-rows:2fr 1fr 1fr 5fr 1fr;
-                    
-                    .name {
-                        grid-row: 1/2;
-                        width: 100%;
-                        display: grid;
-                        grid-row: 1fr 1fr;
-                        .inputName {
-                            grid-row: 1/2;
-                            input{ 
-                                width: 100%;
-                            }
-                        }
-                        .inputLastName {
-                            grid-row: 2/3;
-                            input{ 
-                                width: 100%;
-                            }
-                        }
-                    }
-                    .email {
-                        margin-top: 1.25rem;
-                        grid-row: 2/3;
-                        input {
-                            width: 100%;
-                        }
-                    }
-                    .number {
-                        margin-top: 1.25rem;
-                        grid-row:3/4 ;
-                        input {
-                            width: 100%;
-                        }
-                    }
-                    .bloque {
-                        margin-top: 1.25rem;
-                        grid-row: 4/5;
-                    }
-                    .boton {
-                        margin-top: 1.25rem;
-                        grid-row: 5/6;
+        .questionsContainer {
+            .question {
+                ul {
+                    li {
+                        font-size: .875rem;
                     }
                 }
             }
         }
     }
+    .contactForm {
+        margin-bottom: 3.125rem;
+        h3 {
+            font-size: 1.625rem;
+        }
+        form {
+            fieldset {
+                grid-template-columns: 1fr;
+                grid-template-rows: 2fr 1fr 1fr 5fr 1fr;
+
+                .name {
+                    display: grid;
+                    grid-template-rows: 1fr 1fr;
+                    .inputName {
+                        input {
+                            width: 100%;
+                        }
+                    }
+                    .inputLastname {
+                        input {
+                            width: 100%;
+                        }
+                    }
+                }
+                .email {
+                    margin-top: 1.25rem;
+                    input {
+                        width: 100%;
+                    }
+                }
+                .number {
+                    margin-top: 1.25rem;
+                    input {
+                        width: 100%;
+                    }
+                }
+                .bloque {
+                    margin-top: 1.25rem;
+                }
+                .boton {
+                    margin-top: 1.25rem;
+                }
+            }
+        }
+    }
+}
+
 }
