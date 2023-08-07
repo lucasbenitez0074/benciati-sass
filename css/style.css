@@ -1973,6 +1973,7 @@ main .servicesCards .serviceCard:hover .animation {
   .contenedor .contactForm form fieldset .name {
     display: grid;
     grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
   .contenedor .contactForm form fieldset .name .inputName input {
     width: 100%;
